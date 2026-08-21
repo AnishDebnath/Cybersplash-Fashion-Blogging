@@ -40,7 +40,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                   onNavigate(link.page);
                   scrollToTop();
                 }}
-                className="hover:text-[#FFFDF8] transition-colors py-1 px-2"
+                className="hover:text-[#FFFDF8] transition-colors py-3 px-4"
               >
                 {link.label}
               </button>
@@ -57,36 +57,36 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
             href="https://facebook.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-8 h-8 rounded-full border border-[#3D2B24]/40 hover:border-[#3D2B24] bg-[#FFFDF8]/30 hover:bg-[#3D2B24] hover:text-white text-[#3D2B24] flex items-center justify-center transition-all shadow-sm"
+            className="w-10 h-10 rounded-full border border-[#3D2B24]/40 hover:border-[#3D2B24] bg-[#FFFDF8]/30 hover:bg-[#3D2B24] hover:text-white text-[#3D2B24] flex items-center justify-center transition-all shadow-sm"
             aria-label="Facebook"
           >
-            <Facebook className="w-3.5 h-3.5" />
+            <Facebook className="w-4 h-4" />
           </a>
           <a
             href="https://instagram.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-8 h-8 rounded-full border border-[#3D2B24]/40 hover:border-[#3D2B24] bg-[#FFFDF8]/30 hover:bg-[#3D2B24] hover:text-white text-[#3D2B24] flex items-center justify-center transition-all shadow-sm"
+            className="w-10 h-10 rounded-full border border-[#3D2B24]/40 hover:border-[#3D2B24] bg-[#FFFDF8]/30 hover:bg-[#3D2B24] hover:text-white text-[#3D2B24] flex items-center justify-center transition-all shadow-sm"
             aria-label="Instagram"
           >
-            <Instagram className="w-3.5 h-3.5" />
+            <Instagram className="w-4 h-4" />
           </a>
           <a
             href="https://twitter.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-8 h-8 rounded-full border border-[#3D2B24]/40 hover:border-[#3D2B24] bg-[#FFFDF8]/30 hover:bg-[#3D2B24] hover:text-white text-[#3D2B24] flex items-center justify-center transition-all shadow-sm"
+            className="w-10 h-10 rounded-full border border-[#3D2B24]/40 hover:border-[#3D2B24] bg-[#FFFDF8]/30 hover:bg-[#3D2B24] hover:text-white text-[#3D2B24] flex items-center justify-center transition-all shadow-sm"
             aria-label="X / Twitter"
           >
-            <Twitter className="w-3.5 h-3.5" />
+            <Twitter className="w-4 h-4" />
           </a>
           <button
             onClick={scrollToTop}
-            className="w-8 h-8 rounded-full border border-[#3D2B24]/40 hover:border-[#3D2B24] bg-[#FFFDF8]/30 hover:bg-[#3D2B24] hover:text-white text-[#3D2B24] flex items-center justify-center transition-all shadow-sm ml-2"
+            className="w-10 h-10 rounded-full border border-[#3D2B24]/40 hover:border-[#3D2B24] bg-[#FFFDF8]/30 hover:bg-[#3D2B24] hover:text-white text-[#3D2B24] flex items-center justify-center transition-all shadow-sm ml-2"
             title="Back to Top"
             aria-label="Scroll to top"
           >
-            <ArrowUp className="w-3.5 h-3.5" />
+            <ArrowUp className="w-4 h-4" />
           </button>
         </div>
 

@@ -61,6 +61,8 @@ export const FashionPage: React.FC<FashionPageProps> = ({
               <img
                 src={spotlightStory.image}
                 alt={spotlightStory.title}
+                loading="eager"
+                fetchPriority="high"
                 className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
               />
             </div>

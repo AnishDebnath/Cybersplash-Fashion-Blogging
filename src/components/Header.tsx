@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+﻿import React, { useState, useEffect } from 'react';
 import { Menu, Search, Bookmark, Sparkles } from 'lucide-react';
 import { PageView } from '../types';
 import { Logo } from './Logo';
@@ -15,8 +15,8 @@ interface HeaderProps {
 export const Header: React.FC<HeaderProps> = ({
   currentPage,
   onNavigate,
-  onOpenSearch = () => {},
-  onOpenBookmarks = () => {},
+  onOpenSearch = () => { },
+  onOpenBookmarks = () => { },
   savedCount = 0,
 }) => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -42,11 +42,10 @@ export const Header: React.FC<HeaderProps> = ({
   return (
     <>
       <header
-        className={`w-full transition-all duration-300 z-40 ${
-          isScrolled
-            ? 'sticky top-0 bg-[#FFFDF8]/95 backdrop-blur-md shadow-[0_4px_20px_rgba(75,58,60,0.06)] border-b border-[#E7D8BD]'
-            : 'relative bg-[#FFFDF8]'
-        }`}
+        className={`w-full transition-all duration-300 z-40 ${isScrolled
+          ? 'sticky top-0 bg-[#FFFDF8]/95 backdrop-blur-md shadow-[0_4px_20px_rgba(75,58,60,0.06)] border-b border-[#E7D8BD]'
+          : 'relative bg-[#FFFDF8]'
+          }`}
       >
         {/* Central Logo Header */}
         <div className="py-5 sm:py-7 px-4 flex items-center justify-between lg:justify-center relative max-w-7xl mx-auto">
@@ -81,11 +80,10 @@ export const Header: React.FC<HeaderProps> = ({
                 <button
                   key={link.page}
                   onClick={() => onNavigate(link.page)}
-                  className={`text-[11px] sm:text-xs xl:text-sm font-medium tracking-[0.25em] sm:tracking-[0.3em] uppercase transition-all duration-200 relative py-1 px-1.5 sm:px-2 ${
-                    isActive
-                      ? 'text-[#FFFDF8] font-bold after:content-[""] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-4 after:h-[2px] after:bg-[#FFFDF8]'
-                      : 'text-[#4B3A3C] hover:text-white hover:scale-105'
-                  }`}
+                  className={`text-[11px] sm:text-xs xl:text-sm font-medium tracking-[0.25em] sm:tracking-[0.3em] uppercase transition-all duration-200 relative py-1 px-1.5 sm:px-2 ${isActive
+                    ? 'text-[#FFFDF8] font-bold after:content-[""] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-4 after:h-[2px] after:bg-[#FFFDF8]'
+                    : 'text-[#4B3A3C] hover:text-white hover:scale-105'
+                    }`}
                 >
                   {link.label}
                 </button>

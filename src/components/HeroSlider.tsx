@@ -78,7 +78,9 @@ export const HeroSlider: React.FC<HeroSliderProps> = ({ slides, onSelectStory })
               alt={current.title}
               className="w-full h-full object-cover object-center"
               loading="eager"
-            />
+               fetchPriority="high"
+               sizes="100vw"
+             />
 
             {/* Full-Width Luxury Editorial Dark Overlays */}
             <div className="absolute inset-0 w-full h-full bg-black/40" />
