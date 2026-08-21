@@ -1,0 +1,108 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-primary: #FFFDF8;
+    --bg-secondary: #FFFAF1;
+    --gold: #C9A44B;
+    --gold-light: #E2CA89;
+    --gold-dark: #A38133;
+    --rose: #D47B9D;
+    --rose-dark: #B85B80;
+    --rose-light: #F8E6EE;
+    --text-main: #4B3A3C;
+    --text-muted: #77666A;
+    --border-soft: #E7D8BD;
+    --border-gold: #D8BF89;
+  }
+
+  body {
+    background-color: var(--bg-primary);
+    color: var(--text-main);
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, .font-editorial {
+    font-family: 'Cormorant Garamond', serif;
+  }
+
+  .font-display {
+    font-family: 'Playfair Display', serif;
+  }
+
+  .font-script {
+    font-family: 'Alex Brush', 'Pinyon Script', cursive;
+  }
+
+  .font-cinzel {
+    font-family: 'Cinzel', serif;
+  }
+
+  .font-sans-clean {
+    font-family: 'Montserrat', sans-serif;
+  }
+}
+
+/* Custom Editorial Utilities */
+.editorial-frame {
+  position: relative;
+}
+
+.editorial-frame::after {
+  content: '';
+  position: absolute;
+  inset: -6px;
+  border: 1px solid var(--border-soft);
+  pointer-events: none;
+  border-radius: inherit;
+  transition: all 0.4s ease;
+}
+
+.editorial-frame:hover::after {
+  border-color: var(--gold);
+  inset: -8px;
+}
+
+/* Gold gradient borders */
+.gold-gradient-border {
+  border-image: linear-gradient(to right, transparent, #C9A44B, transparent) 1;
+}
+
+.gold-gradient-bg {
+  background: linear-gradient(135deg, #DFCA8C 0%, #C9A44B 50%, #B38E37 100%);
+}
+
+.gold-ribbon-bg {
+  background: linear-gradient(180deg, #D6B258 0%, #C1993D 100%);
+}
+
+.rose-pill-bg {
+  background: linear-gradient(135deg, #DE89A9 0%, #D47B9D 100%);
+}
+
+/* Smooth Masonry Column Break Prevention */
+.break-inside-avoid {
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+/* Custom Scrollbar for Luxury Aesthetic */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FFFDF8;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #E7D8BD;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #C9A44B;
+}
+

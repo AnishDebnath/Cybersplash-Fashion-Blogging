@@ -1,0 +1,28 @@
+# Dependencies
+node_modules/
+
+# Vite/React build output
+dist/
+build/
+
+# TypeScript / IDE
+*.tsbuildinfo
+.vscode/
+.idea/
+
+# Environment variables
+.env*
+!.env.example
+
+# OS generated
+.DS_Store
+
+# Logs
+*.log
+
+# Test coverage (if enabled later)
+coverage/
+
+# Git internals
+/.git/logs
+/.git/refs
