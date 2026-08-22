@@ -1,120 +1,90 @@
-@import "tailwindcss";
+@import 'https://fonts.googleapis.com/css2?family=Alice&family=Lora:ital,wght@0,400;0,700;1,400&family=Arimo:wght@400;700&family=Cinzel+Decorative:wght@700&family=Inter:wght@400;700&family=Alex+Brush&display=swap';
+@import 'tailwindcss';
 
-@layer base {
-  :root {
-    --bg-primary: #FFFDF8;
-    --bg-secondary: #FFFAF1;
-    --gold: #C9A44B;
-    --gold-light: #E2CA89;
-    --gold-dark: #A38133;
-    --rose: #D47B9D;
-    --rose-dark: #B85B80;
-    --rose-light: #F8E6EE;
-    --text-main: #4B3A3C;
-    --text-muted: #77666A;
-    --border-soft: #E7D8BD;
-    --border-gold: #D8BF89;
-  }
-
-  body {
-    background-color: var(--bg-primary);
-    color: var(--text-main);
-    font-family: 'Montserrat', sans-serif;
-    overflow-x: hidden;
-  }
-
-  h1, h2, h3, h4, .font-editorial {
-    font-family: 'Cormorant Garamond', serif;
-  }
-
-  .font-display {
-    font-family: 'Playfair Display', serif;
-  }
-
-  .font-script {
-    font-family: 'Alex Brush', 'Pinyon Script', cursive;
-  }
-
-  .font-cinzel {
-    font-family: 'Cinzel', serif;
-  }
-
-  .font-sans-clean {
-    font-family: 'Montserrat', sans-serif;
-  }
+@theme {
+  --font-alice: "Alice", serif;
+  --font-lora: "Lora", serif;
+  --font-arimo: "Arimo", sans-serif;
+  --font-cinzel: "Cinzel Decorative", serif;
+  --font-inter: "Inter", sans-serif;
+  --font-alex: "Alex Brush", cursive;
 }
 
-/* Custom Editorial Utilities */
-.editorial-frame {
-  position: relative;
+/* Carousel Ken-Burns zoom */
+@keyframes cs-zoom {
+  from { transform: scale(1); }
+  to   { transform: scale(1.10); }
 }
 
-.editorial-frame::after {
-  content: '';
-  position: absolute;
-  inset: -6px;
-  border: 1px solid var(--border-soft);
-  pointer-events: none;
-  border-radius: inherit;
-  transition: all 0.4s ease;
+/* ── Cybersplash hover & interaction utilities ── */
+
+.cs-nav-item {
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+.cs-nav-item:hover {
+  color: #dd72a6 !important;
 }
 
-.editorial-frame:hover::after {
-  border-color: var(--gold);
-  inset: -8px;
+/* Portrait card hover — scale the inner image */
+.cs-portrait-card {
+  transition: box-shadow 0.3s ease;
+}
+.cs-portrait-card:hover .cs-card-img {
+  transform: scale(1.05);
+}
+.cs-card-img {
+  transition: transform 0.4s ease;
+  transform-origin: center;
 }
 
-/* Gold gradient borders */
-.gold-gradient-border {
-  border-image: linear-gradient(to right, transparent, #C9A44B, transparent) 1;
+/* Article text card hover (Latest Stories titles) */
+.cs-article-title {
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+.cs-article-title:hover {
+  color: #c1536b !important;
 }
 
-.gold-gradient-bg {
-  background: linear-gradient(135deg, #DFCA8C 0%, #C9A44B 50%, #B38E37 100%);
+/* Button hover */
+.cs-btn {
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  user-select: none;
+}
+.cs-btn:hover {
+  transform: scale(1.04);
+  opacity: 0.85;
+}
+.cs-btn:active {
+  transform: scale(0.98);
 }
 
-.gold-ribbon-bg {
-  background: linear-gradient(180deg, #D6B258 0%, #C1993D 100%);
+/* Subscribe button */
+.cs-btn-subscribe {
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+.cs-btn-subscribe:hover {
+  opacity: 0.8;
 }
 
-.rose-pill-bg {
-  background: linear-gradient(135deg, #DE89A9 0%, #D47B9D 100%);
+/* Input fields */
+.cs-input {
+  background: transparent;
+  border: none;
+  outline: none;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  font-family: 'Lora', serif;
+  color: #333;
+  caret-color: #dd72a6;
 }
-
-/* Smooth Masonry Column Break Prevention */
-.break-inside-avoid {
-  break-inside: avoid;
-  page-break-inside: avoid;
+.cs-input::placeholder {
+  color: #c4c2c2;
 }
-
-/* Custom Scrollbar for Luxury Aesthetic */
-::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
+.cs-input:focus {
+  outline: none;
 }
-
-::-webkit-scrollbar-track {
-  background: #FFFDF8;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #E7D8BD;
-  border-radius: 9999px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #C9A44B;
-}
-
-/* Focus visible outlines for accessibility */
-:focus-visible {
-  outline: 2px solid var(--gold);
-  outline-offset: 2px;
-}
-
-a:focus-visible,
-button:focus-visible {
-  outline: 2px solid var(--gold);
-  outline-offset: 2px;
-}
-

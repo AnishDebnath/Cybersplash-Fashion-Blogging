@@ -1,6 +1,0 @@
-{
-  "name": "CYBERSPLASH",
-  "description": "A luxury fashion and lifestyle editorial magazine featuring curated looks, seasonal trends, and modern style stories.",
-  "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
-}
