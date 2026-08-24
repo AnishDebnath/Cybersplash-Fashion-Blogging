@@ -19,6 +19,7 @@ const hf0d89 = `${A}/f0d89.png`
 const hb1a24 = `${A}/b1a24.png`
 const hd81b9 = `${A}/d81b9.png`
 const hff3a2 = `${A}/ff3a2.png`
+const he4waf = `${A}/e4waf.png`
 const he7d3b = `${A}/e7d3b.png`
 const ha2e9e = `${A}/a2e9e.png`
 const h7c0cc = `${A}/7c0cc.png`
@@ -180,9 +181,11 @@ function Hero() {
         <div style={{ position: 'absolute', left: -10.47, top: 0, width: 548.72, height: 431.42 }}><Img src={h847e0} /></div>
       </Box>
 
-      {/* ── Leaves illustrations right (mirrored) ── */}
-      <Box l={1392.22} t={189.42} w={527.78} h={431.42} clip style={{ transform: 'scaleX(-1)' }}>
-        <div style={{ position: 'absolute', left: -10.47, top: 0, width: 548.72, height: 431.42 }}><Img src={h847e0} /></div>
+      {/* ── Right-side flower asset ── */}
+      <Box l={1260} t={150} w={650} h={380} style={{ pointerEvents: 'none' }}>
+        <div style={{ position: 'absolute', inset: 0, transform: 'translateX(10px) translateY(80px)' }}>
+          <Img src={he4waf} style={{ objectFit: 'contain', objectPosition: 'right bottom' }} />
+        </div>
       </Box>
 
       {/* ── Large center portrait ── */}
