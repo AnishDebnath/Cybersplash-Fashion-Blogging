@@ -13,7 +13,7 @@ function Box({ l, t, r, b, w, h, clip, style, className, children }: {
       ...(b !== undefined && { bottom: b }),
       ...(w !== undefined && { width: w }),
       ...(h !== undefined && { height: h }),
-      ...(clip && { overflow: 'hidden' }),
+      ...(clip || style?.borderRadius !== undefined ? { overflow: 'hidden' } : {}),
       ...style,
     }}>{children}</div>
   )

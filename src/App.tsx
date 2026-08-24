@@ -19,6 +19,7 @@ const hf0d89 = `${A}/f0d89.png`
 const hb1a24 = `${A}/b1a24.png`
 const hd81b9 = `${A}/d81b9.png`
 const hff3a2 = `${A}/ff3a2.png`
+const h34asda = `${A}/34asda.png`
 const h4sdad = `${A}/4sdad.png`
 const h13dasd = `${A}/13dasd.png`
 const he4waf = `${A}/e4waf.png`
@@ -122,6 +123,8 @@ const ia2e9e = `${A}/a2e9e.png`
 const id81b9 = `${A}/d81b9.png`
 const i8c95f = `${A}/8c95f.png`
 const i4b1b4 = `${A}/4b1b4.png`
+const i90bed = `${A}/90bed.png`
+const i12eqsd = `${A}/12eqsd.png`
 const id67f4 = `${A}/d67f4.svg`
 const ifaeb8 = `${A}/faeb8.svg`
 
@@ -626,10 +629,16 @@ function LatestStories() {
         <div style={{ position: 'absolute', left: -109.88, top: 0, width: 487.11, height: 340.36 }}><Img src={s4b1b4} /></div>
       </Box>
 
+      {/* Left-side decorative flourish near button */}
+      <Box l={150} t={3600.31} w={500} h={180} style={{ pointerEvents: 'none' }}>
+        <Img src={h34asda} style={{ objectFit: 'contain', objectPosition: 'center' }} />
+      </Box>
+
       {/* ── Explore More button ── */}
       <Box l={711.9} t={3627.31} w={531.34} h={108.25} className="cs-btn">
         <Masked mask={seab3b} mw={531.34} mh={108.25}><Img src={s1ede6} /></Masked>
       </Box>
+
       <Txt l={850.08} r={724.06} t={3682.08} style={{ fontFamily: 'Arimo', fontSize: 43.2, lineHeight: '59.034px', color: '#fff', textAlign: 'center', pointerEvents: 'none' }}>
         <p style={{ margin: 0 }}>EXPLORE MORE</p>
       </Txt>
@@ -710,6 +719,8 @@ function StyleCategories() {
 
       {/* Wavy calligraphy decoration */}
       <Box l={222.96} t={1106.5} w={424.31} h={83.09}><Img src={c65b46} /></Box>
+      <Box r={222.96} t={1106.5} w={424.31} h={83.09} style={{ transform: 'scaleX(-1)' }}><Img src={c65b46} /></Box>
+
 
       {/* Sparkling glitter */}
       <Box l={-76.12} t={982.2} w={531.2} h={279.72} clip>
@@ -826,6 +837,9 @@ function Instagram() {
       <Box l={1344} t={1453.65} w={460.48} h={402.17} clip>
         <div style={{ position: 'absolute', left: -57.54, top: 0, width: 575.56, height: 402.17 }}><Img src={i4b1b4} /></div>
       </Box>
+      <Box l={0} t={1350} w={280} h={400} style={{ pointerEvents: 'none' }}>
+        <Img src={i12eqsd} style={{ objectFit: 'contain', objectPosition: 'left center' }} />
+      </Box>
       <Box l={1527.2} t={44.73} w={529.16} h={392.55} clip>
         <div style={{ position: 'absolute', left: -16.32, top: 0, width: 561.8, height: 392.55 }}><Img src={i4b1b4} /></div>
       </Box>
@@ -839,8 +853,12 @@ function Instagram() {
       {/* Golden floral branch right */}
       <Box l={1663.56} t={1140.23} w={256.44} h={599.84}><Img src={i8c95f} /></Box>
 
+      <Box l={16} t={34} w={200} h={560} style={{ pointerEvents: 'none' }}>
+        <Img src={i12eqsd} style={{ objectFit: 'contain', objectPosition: 'left top' }} />
+      </Box>
+
       {/* Instagram title */}
-      <Txt l={212.72} r={149.17} t={184.25} style={{ fontFamily: 'Alex Brush', fontSize: 82, lineHeight: '178px', color: '#dd72a6', textAlign: 'center' }}>
+      <Txt l={212.72} r={149.17} t={184.25} style={{ fontFamily: 'Alex Brush', fontSize: 120, lineHeight: '178px', color: '#dd72a6', textAlign: 'center' }}>
         <p style={{ margin: 0 }}>Follow on instagram @cybersplase</p>
       </Txt>
 
