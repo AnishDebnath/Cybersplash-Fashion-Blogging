@@ -19,6 +19,8 @@ const hf0d89 = `${A}/f0d89.png`
 const hb1a24 = `${A}/b1a24.png`
 const hd81b9 = `${A}/d81b9.png`
 const hff3a2 = `${A}/ff3a2.png`
+const h4sdad = `${A}/4sdad.png`
+const h13dasd = `${A}/13dasd.png`
 const he4waf = `${A}/e4waf.png`
 const he7d3b = `${A}/e7d3b.png`
 const ha2e9e = `${A}/a2e9e.png`
@@ -81,6 +83,7 @@ const s485da = `${A}/485da.svg`
 const seab3b = `${A}/eab3b.svg`
 const s4b1b4 = `${A}/4b1b4.png`
 const sbb8c6 = `${A}/bb8c6.png`
+const sbdasd = `${A}/13dasd.png`
 
 // Style Categories
 const cd2a6e = `${A}/d2a6e.png`
@@ -371,6 +374,18 @@ function Editorial() {
 function LatestStories() {
   return (
     <div style={{ position: 'relative', width: 1920, height: 3817, overflow: 'hidden', background: '#fff' }}>
+
+
+
+      {/* Latest Stories decorative assets */}
+      <Box l={1280} t={0} w={220} h={220} style={{ opacity: 0.95, pointerEvents: 'none' }}>
+        <Img src={h13dasd} style={{ objectFit: 'contain', objectPosition: 'center' }} />
+      </Box>
+      <Box l={1440} t={50} w={430} h={330} style={{ pointerEvents: 'none' }}>
+        <div style={{ position: 'absolute', inset: 0, transform: 'translateX(12px)' }}>
+          <Img src={h4sdad} style={{ objectFit: 'contain', objectPosition: 'right top' }} />
+        </div>
+      </Box>
 
       {/* Top glitter stars */}
       <Box l={218.53} t={-39.2} w={281.58} h={309.86}><Img src={sbb8c6} /></Box>
