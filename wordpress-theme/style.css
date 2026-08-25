@@ -1,0 +1,63 @@
+/*
+Theme Name: Cybersplash Fashion
+Theme URI: https://cybersplash.fashion
+Description: Cybersplash Fashion Blog - WordPress + Elementor conversion from React Vite project
+Author: Migration Tool
+Version: 1.0.0
+Text Domain: cybersplash
+Requires PHP: 8.0
+Tags: block-patterns, custom-logo, featured-images, menus, widgets
+*/
+
+:root {
+  --font-alice: "Alice", serif;
+  --font-lora: "Lora", serif;
+  --font-arimo: "Arimo", sans-serif;
+  --font-cinzel: "Cinzel Decorative", serif;
+  --font-inter: "Inter", sans-serif;
+  --font-alex: "Alex Brush", cursive;
+
+  --color-primary: #dd72a6;
+  --color-secondary: #c1536b;
+  --color-white: #fff;
+  --color-black: #000;
+  --color-dark: #333;
+  --color-bg: #fffff9;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-inter), sans-serif;
+  background: var(--color-bg);
+  color: var(--color-black);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-lora), serif;
+  line-height: 1.2;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.btn {
+  cursor: pointer;
+  user-select: none;
+}
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
