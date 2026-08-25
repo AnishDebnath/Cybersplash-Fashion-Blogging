@@ -33,6 +33,22 @@
   }
 }
 
+@keyframes cs-hero-image-enter {
+  from {
+    opacity: 0.72;
+    transform: scale(1.12);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.cs-hero-slide-active .cs-hero-slide-image {
+  animation: cs-hero-image-enter 1.4s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
 .cs-hero-content>* {
   animation: cs-hero-text-enter 0.8s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
@@ -44,6 +60,8 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
+
+  .cs-hero-slide-active .cs-hero-slide-image,
   .cs-hero-content>* {
     animation: none;
   }

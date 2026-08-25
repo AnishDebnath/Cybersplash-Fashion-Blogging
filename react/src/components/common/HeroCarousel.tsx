@@ -43,6 +43,7 @@ function HeroCarousel() {
       {SLIDES.map((s, i) => (
         <div
           key={i}
+          className={i === active ? 'cs-hero-slide cs-hero-slide-active' : 'cs-hero-slide'}
           style={{
             position: 'absolute',
             inset: 0,
@@ -60,6 +61,7 @@ function HeroCarousel() {
         >
           <img
             key={`${i}-${active}`}
+            className="cs-hero-slide-image"
             src={s.img}
             alt=""
             style={{
