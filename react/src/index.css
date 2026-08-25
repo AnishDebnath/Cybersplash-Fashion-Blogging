@@ -37,6 +37,12 @@
   animation: cs-hero-text-enter 0.8s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 
+.cs-hero-arrow-icon {
+  display: block;
+  line-height: 1;
+  transform: translateY(-2px);
+}
+
 @media (prefers-reduced-motion: reduce) {
   .cs-hero-content>* {
     animation: none;

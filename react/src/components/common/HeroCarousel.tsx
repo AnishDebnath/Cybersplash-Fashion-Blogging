@@ -32,7 +32,7 @@ function HeroCarousel() {
     border: '2px solid rgba(255,255,255,0.5)',
     backdropFilter: 'blur(8px)',
     display: 'flex', alignItems: 'center', justifyContent: 'center',
-    cursor: 'pointer', color: '#fff', fontSize: 38,
+    cursor: 'pointer', color: '#fff', fontSize: 38, lineHeight: 1,
     userSelect: 'none', zIndex: 10,
     transition: 'background 0.2s',
   }
@@ -108,8 +108,8 @@ function HeroCarousel() {
       </div>
 
       {/* Arrows */}
-      <div onClick={prev} style={{ ...arrowStyle, left: 64 }}>‹</div>
-      <div onClick={next} style={{ ...arrowStyle, right: 64 }}>›</div>
+      <div onClick={prev} style={{ ...arrowStyle, left: 64 }}><span className="cs-hero-arrow-icon">‹</span></div>
+      <div onClick={next} style={{ ...arrowStyle, right: 64 }}><span className="cs-hero-arrow-icon">›</span></div>
 
       {/* Dot indicators */}
       <div style={{ position: 'absolute', bottom: 48, left: '50%', transform: 'translateX(-50%)', display: 'flex', gap: 14, zIndex: 10 }}>
