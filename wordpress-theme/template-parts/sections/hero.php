@@ -1,7 +1,7 @@
 <?php
 /**
  * Hero Section Template Part
- * Maps to: App.tsx Hero component
+ * Maps to: React App.tsx Hero component
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -46,7 +46,7 @@ if ( ! defined( 'ABSPATH' ) ) {
          "
     ></div>
 
-    <!-- Carousel -->
+    <!-- Hero Carousel -->
     <div class="cs-hero-carousel"
          style="
            position: absolute;
@@ -58,6 +58,50 @@ if ( ! defined( 'ABSPATH' ) ) {
          "
     >
       {/* Slides with zoom/fade animation */}
+      {/* Slide 1 */}
+      <div style="
+        position: absolute;
+        inset: 0;
+        overflow: hidden;
+        opacity: 1;
+        transition: opacity 1s ease;
+      ">
+        <img
+          src="<?= esc_url( get_template_directory_uri() . '/assets/images/62320.png') ?>"
+          alt="Hero Slide 1"
+          style="width: 100%; height: 100%; object-fit: cover; display: block; transform-origin: center;"
+        />
+      </div>
+
+      {/* Slide 2 */}
+      <div style="
+        position: absolute;
+        inset: 0;
+        overflow: hidden;
+        opacity: 0;
+        transition: opacity 1s ease;
+      ">
+        <img
+          src="<?= esc_url( get_template_directory_uri() . '/assets/images/94f52.png') ?>"
+          alt="Hero Slide 2"
+          style="width: 100%; height: 100%; object-fit: cover; display: block;"
+        />
+      </div>
+
+      {/* Slide 3 */}
+      <div style="
+        position: absolute;
+        inset: 0;
+        overflow: hidden;
+        opacity: 0;
+        transition: opacity 1s ease;
+      ">
+        <img
+          src="<?= esc_url( get_template_directory_uri() . '/assets/images/038a6.png') ?>"
+          alt="Hero Slide 3"
+          style="width: 100%; height: 100%; object-fit: cover; display: block;"
+        />
+      </div>
     </div>
 
     <!-- Navigation -->
@@ -96,7 +140,7 @@ if ( ! defined( 'ABSPATH' ) ) {
       <?php endforeach; ?>
     </nav>
 
-    <!-- Text layers from React hero -->
+    <!-- Text content -->
     <div class="cs-hero-text"
          style="
            position: absolute;
@@ -112,6 +156,16 @@ if ( ! defined( 'ABSPATH' ) ) {
       <p style="margin: 0;">Looks</p>
     </div>
 
+    <!-- Bottom gold divider -->
+    <div style="
+      position: absolute;
+      bottom: 0;
+      left: '50%';
+      transform: translateX(-50%);
+      width: 500;
+      height: 3;
+      background: linear-gradient(to right, transparent, #c9a96e 40%, #c9a96e 60%, transparent);
+    " />
   </section>
 
 <?php endif; ?>

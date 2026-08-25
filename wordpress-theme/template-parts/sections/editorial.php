@@ -1,7 +1,7 @@
 <?php
 /**
  * Editorial Section Template Part
- * Maps to: App.tsx Editorial component
+ * Maps to: React App.tsx Editorial component
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -32,7 +32,7 @@ if ( ! defined( 'ABSPATH' ) ) {
            overflow: hidden;
          "
     >
-      <img src="<?= esc_url( get_template_directory_uri() . '/assets/images/eaa62e.png') ?>"
+      <img src="<?= esc_url( get_template_directory_uri() . '/assets/images/aa62e.png') ?>"
            alt="Editorial fashion photo"
            style="position: absolute; left: 0; top: -137.58px; width: 1853.06px; height: 1362px; object-fit: cover;"
       />
@@ -48,7 +48,7 @@ if ( ! defined( 'ABSPATH' ) ) {
            height: 418.73px;
          "
     >
-      <img src="<?= esc_url( get_template_directory_uri() . '/assets/images/e10437.png') ?>"
+      <img src="<?= esc_url( get_template_directory_uri() . '/assets/images/10437.png') ?>"
            alt="Gold leaf"
       />
     </div>
@@ -81,7 +81,7 @@ if ( ! defined( 'ABSPATH' ) ) {
            overflow: hidden;
          "
     >
-      <img src="<?= esc_url( get_template_directory_uri() . '/assets/images/h4b1b4.png') ?>"
+      <img src="<?= esc_url( get_template_directory_uri() . '/assets/images/4b1b4.png') ?>"
            alt="Star confetti"
            style="position: absolute; left: -55.58px; top: 0; width: 672.95px; height: 470.22px; object-fit: contain;"
       />
@@ -97,7 +97,7 @@ if ( ! defined( 'ABSPATH' ) ) {
            height: 44.47px;
          "
     >
-      <img src="<?= esc_url( get_template_directory_uri() . '/assets/images/hd81b9.png') ?>"
+      <img src="<?= esc_url( get_template_directory_uri() . '/assets/images/d81b9.png') ?>"
            alt="Golden geometric line"
       />
     </div>
@@ -113,7 +113,7 @@ if ( ! defined( 'ABSPATH' ) ) {
            text-align: center;
          "
     >
-      <p style="margin: 0;">MARCH 2026 &#8211; FASHION</p>
+      <p style="margin: 0;">MARCH 2026 — FASHION</p>
     </div>
 
     <!-- Title -->

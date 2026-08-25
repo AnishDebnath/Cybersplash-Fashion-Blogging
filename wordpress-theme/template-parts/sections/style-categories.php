@@ -1,7 +1,7 @@
 <?php
 /**
  * Style Categories Section Template Part
- * Maps to: App.tsx StyleCategories component
+ * Maps to: React App.tsx StyleCategories component
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -29,9 +29,9 @@ if ( ! defined( 'ABSPATH' ) ) {
            top: -30.26px;
            width: 476.52px;
            height: 309.86px;
-           clip:"
+         "
     >
-      <img src="<?= esc_url( get_template_directory_uri() . '/assets/images/cbb8c6.png') ?>"
+      <img src="<?= esc_url( get_template_directory_uri() . '/assets/images/bb8c6.png') ?>"
            alt="Glitter stars"
            style="position: absolute; left: 0; top: -107.26px; width: 476.52px; height: 524.36px; object-fit: contain;"
       />
@@ -47,7 +47,7 @@ if ( ! defined( 'ABSPATH' ) ) {
            height: 236.23px;
            overflow: hidden;"
     >
-      <img src="<?= esc_url( get_template_directory_uri() . '/assets/images/c528be.png') ?>"
+      <img src="<?= esc_url( get_template_directory_uri() . '/assets/images/528be.png') ?>"
            alt="Floral branch"
            style="position: absolute; left: -3.8px; top: -2.06px; width: 422.72px; height: 238.31px; object-fit: contain;"
       />
@@ -62,7 +62,7 @@ if ( ! defined( 'ABSPATH' ) ) {
            width: 553.56px;
            height: 50.5px;"
     >
-      <img src="<?= esc_url( get_template_directory_uri() . '/assets/images/cd2a6e.png') ?>"
+      <img src="<?= esc_url( get_template_directory_uri() . '/assets/images/d2a6e.png') ?>"
            alt="Golden geom line"
       />
     </div>
@@ -89,8 +89,8 @@ if ( ! defined( 'ABSPATH' ) ) {
     >
       <div class="cs-category-card"
            style="width: 618.28px; height: 740.1px; overflow: hidden; clip: rect(0 618.28 1104.07 0); border-radius: 40px;"
-        >
-        <img src="<?= esc_url( get_template_directory_uri() . '/assets/images/c8c317.png') ?>"
+         >
+        <img src="<?= esc_url( get_template_directory_uri() . '/assets/images/8c317.png') ?>"
              alt="Minimalism"
              style="position: absolute; left: 0; top: -181.97px; width: 618.28px; height: 1104.07px; object-fit: cover; border-radius: 40px;"
         />
@@ -98,8 +98,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 
       <div class="cs-category-card"
            style="width: 618.28px; height: 740.1px; overflow: hidden; clip: rect(0 618.28 927.99 0); border-radius: 40px;"
-        >
-        <img src="<?= esc_url( get_template_directory_uri() . '/assets/images/c2633f.png') ?>"
+         >
+        <img src="<?= esc_url( get_template_directory_uri() . '/assets/images/2633f.png') ?>"
              alt="Street Style"
              style="position: absolute; left: 0; top: -93.94px; width: 618.28px; height: 927.99px; object-fit: cover; border-radius: 40px;"
         />
@@ -107,8 +107,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 
       <div class="cs-category-card"
            style="width: 618.28px; height: 740.1px; overflow: hidden; clip: rect(0 618.28 927.99 0); border-radius: 40px;"
-        >
-        <img src="<?= esc_url( get_template_directory_uri() . '/assets/images/c12864.png') ?>"
+         >
+        <img src="<?= esc_url( get_template_directory_uri() . '/assets/images/12864.png') ?>"
              alt="Cozy Chic"
              style="position: absolute; left: 0; top: -23.66px; width: 618.28px; height: 927.99px; object-fit: cover; border-radius: 40px;"
         />
@@ -139,10 +139,18 @@ if ( ! defined( 'ABSPATH' ) ) {
            justify-content: center;
            gap: 18px;
            color: #fff;"
-      >
-      <span style="font-family: 'Arimo'; font-size: 39.4; letter-spacing: 3.2665px; color: #fff;">SEE MORE</span>
-    </div>
+       >
+       <span style="font-family: 'Arimo'; font-size: 39.4; letter-spacing: 3.2665px; color: #fff;">SEE MORE</span>
+     </div>
 
-  </section>
+     <!-- Bottom star confetti -->
+     <div class="cs-category-confetti"
+          style="position: absolute; bottom: 0; left: 832.28px; width: 622px; height: 434.63px;">
+       <img src="<?= esc_url( get_template_directory_uri() . '/assets/images/4b1b4.png') ?>"
+            alt="Star confetti"
+       />
+     </div>
+
+   </section>
 
 <?php endif; ?>

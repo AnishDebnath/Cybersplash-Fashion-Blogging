@@ -1,7 +1,7 @@
 <?php
 /**
  * Newsletter Section Template Part
- * Maps to: App.tsx Newsletter component
+ * Maps to: React App.tsx Newsletter component
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -29,7 +29,7 @@ if ( ! defined( 'ABSPATH' ) ) {
            width: 501.92px;
            height: 257.03px;"
     >
-      <img src="<?= esc_url( get_template_directory_uri() . '/assets/images/nbb8c6.png') ?>"
+      <img src="<?= esc_url( get_template_directory_uri() . '/assets/images/bb8c6.png') ?>"
            alt="Stars"
            style="position: absolute; left: 0; top: -156px; width: 501.92px; height: 552.33px; object-fit: contain;"
       />
@@ -43,7 +43,7 @@ if ( ! defined( 'ABSPATH' ) ) {
            width: 502.66px;
            height: 257.03px;"
     >
-      <img src="<?= esc_url( get_template_directory_uri() . '/assets/images/nbb8c6.png') ?>"
+      <img src="<?= esc_url( get_template_directory_uri() . '/assets/images/bb8c6.png') ?>"
            alt="Stars"
            style="position: absolute; left: 0; top: -148.05px; width: 502.66px; height: 553.13px; object-fit: contain;"
       />
@@ -55,8 +55,8 @@ if ( ! defined( 'ABSPATH' ) ) {
     >
       <div class="cs-portrait-card"
            style="width: 567.13px; height: 628.37px; overflow: hidden; clip: rect(0 567.13 845.37 0);"
-        >
-        <img src="<?= esc_url( get_template_directory_uri() . '/assets/images/n3748b.png') ?>"
+         >
+        <img src="<?= esc_url( get_template_directory_uri() . '/assets/images/3748b.png') ?>"
              alt="Portrait"
              style="position: absolute; left: 0; top: -108.5px; width: 567.13px; height: 845.37px; object-fit: cover;"
         />
@@ -64,8 +64,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 
       <div class="cs-portrait-card"
            style="width: 567.13px; height: 628.37px; overflow: hidden; clip: rect(0 567.13 756.16 0);"
-        >
-        <img src="<?= esc_url( get_template_directory_uri() . '/assets/images/nf5dd3.png') ?>"
+         >
+        <img src="<?= esc_url( get_template_directory_uri() . '/assets/images/f5dd3.png') ?>"
              alt="Portrait"
              style="position: absolute; left: 0; top: -63.9px; width: 567.13px; height: 756.16px; object-fit: cover;"
         />
@@ -73,8 +73,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 
       <div class="cs-portrait-card"
            style="width: 567.13px; height: 628.37px; overflow: hidden; clip: rect(0 567.13 851.22 0);"
-        >
-        <img src="<?= esc_url( get_template_directory_uri() . '/assets/images/nc07de.png') ?>"
+         >
+        <img src="<?= esc_url( get_template_directory_uri() . '/assets/images/c07de.png') ?>"
              alt="Portrait"
              style="position: absolute; left: 0; top: -111.43px; width: 567.13px; height: 851.22px; object-fit: cover;"
         />
@@ -168,26 +168,15 @@ if ( ! defined( 'ABSPATH' ) ) {
       <div style="
         position: absolute;
         inset: 0;
-        mask-image: url(<?= esc_url( get_template_directory_uri() . '/assets/images/n38008.png') ?>);
-        webkit-mask-image: url(<?= esc_url( get_template_directory_uri() . '/assets/images/n38008.png') ?>);
-        mask-size: 202.77px 80.39px;
-        webkit-mask-size: 202.77px 80.39px;
-        mask-repeat: no-repeat;
-        webkit-mask-repeat: no-repeat;
-        background: #000"
+        background: #000;"
       >
       </div>
       <div style="
         position: absolute;
         inset: 0;
-        mask-image: url(<?= esc_url( get_template_directory_uri() . '/assets/images/nbbeee.png') ?>);
-        webkit-mask-image: url(<?= esc_url( get_template_directory_uri() . '/assets/images/nbbeee.png') ?>);
-        mask-size: 202.75px 80.38px;
-        webkit-mask-size: 202.75px 80.38px;
-        mask-repeat: no-repeat;
-        webkit-mask-repeat: no-repeat;"
+        background: #000;"
       >
-        <img src="<?= esc_url( get_template_directory_uri() . '/assets/images/n2a4e0.png') ?>"
+        <img src="<?= esc_url( get_template_directory_uri() . '/assets/images/2a4e0.svg') ?>"
              alt="Subscribe"
              style="position: absolute; inset: -5.81% -2.31%; display: block; max-width: none; width: 104.62%; height: 111.62%;"
         />

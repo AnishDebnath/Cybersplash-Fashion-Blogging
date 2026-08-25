@@ -1,9 +1,10 @@
 <?php
 /**
- * Cybersplash Fashion - Functions
- * Theme setup and asset enqueueing
+ * Cybersplash Fashion - WordPress Theme
+ * Native WordPress theme matching React design structure
  */
 
+/* Theme Setup */
 if ( function_exists( 'add_theme_support' ) ) {
 
   // Post thumbnails
@@ -12,6 +13,7 @@ if ( function_exists( 'add_theme_support' ) ) {
   // Menus
   register_nav_menus( [
     'primary' => esc_html__( 'Primary Menu', 'cybersplash' ),
+    'footer'  => esc_html__( 'Footer Menu', 'cybersplash' ),
   ] );
 
   // Elementor compatibility - content width
@@ -19,10 +21,8 @@ if ( function_exists( 'add_theme_support' ) ) {
     $content_width = 1920;
   }
 
-  // WordPress block styles
-  add_theme_support( 'wp-block-styles' );
-
   // Editor styles
+  add_theme_support( 'wp-block-styles' );
   add_theme_support( 'editor-stylesheet' );
   add_theme_support( 'editor-font-sizes', [
     [
@@ -75,10 +75,10 @@ if ( function_exists( 'add_theme_support' ) ) {
   ] );
 }
 
-// Enqueue styles
+// Enqueue Styles
 function cybersplash_styles() {
 
-  // Google fonts
+  // Google Fonts
   wp_enqueue_style(
     'cybersplash-fonts',
     'https://fonts.googleapis.com/css2?family=Alice&family=Lora:ital,wght@0,400;0,700;1,400&family=Arimo:wght@400;700&family=Cinzel+Decorative:wght@700&family=Inter:wght@400;700&family=Alex+Brush&display=swap',
@@ -94,26 +94,26 @@ function cybersplash_styles() {
     '1.0.0'
   );
 
-  // Elementor style fallback
+  // Elementor frontend script enqueue
   if ( function_exists( 'elementor' ) ) {
     wp_enqueue_style( 'elementor-frontend' );
   }
 }
 add_action( 'wp_enqueue_scripts', 'cybersplash_styles' );
 
-// Enqueue scripts
+// Enqueue Scripts
 function cybersplash_scripts() {
 
-  // Main theme JS
+  // Main theme JS (placeholder - enqueue your custom JS here)
   wp_enqueue_script(
     'cybersplash-main',
     get_template_directory_uri() . '/assets/js/main.js',
-    [ 'jquery' ],
+    [],
     '1.0.0',
     true
   );
 
-  // Alpine.js for simple interactivity if needed
+  // Alpine.js for simple interactivity
   wp_enqueue_script(
     'cybersplash-alpine',
     'https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js',
@@ -129,15 +129,14 @@ function cybersplash_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'cybersplash_scripts' );
 
-// Customizer settings
+// Customizer Settings
 function cybersplash_customizer( $wp_customize ) {
 
-  // Color palette
+  // Primary color
   $wp_customize->add_setting( 'cybersplash_primary_color', [
     'default' => '#dd72a6',
     'sanitize_callback' => 'sanitize_hex_color',
   ] );
-
   $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'cybersplash_primary_color', [
     'label' => esc_html__( 'Primary Color', 'cybersplash' ),
     'section' => 'colors',
@@ -148,7 +147,6 @@ function cybersplash_customizer( $wp_customize ) {
     'default' => '#fffff9',
     'sanitize_callback' => 'sanitize_hex_color',
   ] );
-
   $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'cybersplash_bg_color', [
     'label' => esc_html__( 'Background Color', 'cybersplash' ),
     'section' => 'colors',
@@ -156,7 +154,7 @@ function cybersplash_customizer( $wp_customize ) {
 }
 add_action( 'customize_register', 'cybersplash_customizer' );
 
-// Register sidebars
+// Widget Areas
 function cybersplash_widgets_init() {
   register_sidebar( [
     'name'          => esc_html__( 'Sidebar', 'cybersplash' ),
@@ -169,4 +167,3 @@ function cybersplash_widgets_init() {
   ] );
 }
 add_action( 'widgets_init', 'cybersplash_widgets_init' );
-?>

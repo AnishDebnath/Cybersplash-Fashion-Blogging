@@ -1,7 +1,7 @@
 <?php
 /**
  * Latest Stories Section Template Part
- * Maps to: App.tsx LatestStories component
+ * Maps to: React App.tsx LatestStories component
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -112,7 +112,7 @@ if ( ! defined( 'ABSPATH' ) ) {
     >
       <div class="cs-portrait-card"
            style="width: 603.38px; height: 685.8px; overflow: hidden; clip: rect(0 603.38 754.22 0);"
-        >
+         >
         <img src="<?= esc_url( get_template_directory_uri() . '/assets/images/8bd87.png') ?>"
              alt="Portrait"
              style="position: absolute; left: 0; top: -34.2px; width: 603.38px; height: 754.22px; object-fit: cover;"
@@ -121,7 +121,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
       <div class="cs-portrait-card"
            style="width: 603.38px; height: 773.59px; overflow: hidden; clip: rect(0 603.38 773.59 0);"
-        >
+         >
         <img src="<?= esc_url( get_template_directory_uri() . '/assets/images/47efc.png') ?>"
              alt="Portrait"
              style="position: absolute; left: -7.27px; top: 0; width: 617.89px; height: 773.59px; object-fit: cover;"
@@ -130,7 +130,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
       <div class="cs-portrait-card"
            style="width: 603.35px; height: 509.89px; overflow: hidden; clip: rect(0 603.35 509.89 0);"
-        >
+         >
         <img src="<?= esc_url( get_template_directory_uri() . '/assets/images/sb2e79.png') ?>"
              alt="Portrait"
              style="position: absolute; left: 0; top: -165.26px; width: 603.35px; height: 739.19px; object-fit: cover;"
@@ -153,7 +153,7 @@ if ( ! defined( 'ABSPATH' ) ) {
         text-align: center;
         letter-spacing: 5.5323px;"
       >
-        <p style="margin: 0;">MARCH 1, 2026 &#8211; LIFESTYLE</p>
+        <p style="margin: 0;">MARCH 1, 2026 — LIFESTYLE</p>
       </div>
 
       <div style="
@@ -200,11 +200,11 @@ if ( ! defined( 'ABSPATH' ) ) {
            justify-content: center;
            gap: 18px;
            color: #fff;"
-      >
-      <span style="font-family: 'Arimo'; font-size: 28; letter-spacing: 5px; color: #fff;">EXPLORE MORE</span>
-      <span style="font-size: 24; color: #fff;">→</span>
-    </div>
+       >
+       <span style="font-family: 'Arimo'; font-size: 28; letter-spacing: 5px; color: #fff;">EXPLORE MORE</span>
+       <span style="font-size: 24; color: #fff;">→</span>
+     </div>
 
-  </section>
+   </section>
 
 <?php endif; ?>

@@ -12,8 +12,35 @@
 
 /* Carousel Ken-Burns zoom */
 @keyframes cs-zoom {
-  from { transform: scale(1); }
-  to   { transform: scale(1.10); }
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.10);
+  }
+}
+
+@keyframes cs-hero-text-enter {
+  from {
+    opacity: 0;
+    transform: translateY(42px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.cs-hero-content>* {
+  animation: cs-hero-text-enter 0.8s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cs-hero-content>* {
+    animation: none;
+  }
 }
 
 /* ── Cybersplash hover & interaction utilities ── */
@@ -22,6 +49,7 @@
   cursor: pointer;
   transition: color 0.2s ease;
 }
+
 .cs-nav-item:hover {
   color: #dd72a6 !important;
 }
@@ -30,9 +58,11 @@
 .cs-portrait-card {
   transition: box-shadow 0.3s ease;
 }
+
 .cs-portrait-card:hover .cs-card-img {
   transform: scale(1.05);
 }
+
 .cs-card-img {
   transition: transform 0.4s ease;
   transform-origin: center;
@@ -43,6 +73,7 @@
   cursor: pointer;
   transition: color 0.2s ease;
 }
+
 .cs-article-title:hover {
   color: #c1536b !important;
 }
@@ -53,10 +84,12 @@
   transition: transform 0.2s ease, opacity 0.2s ease;
   user-select: none;
 }
+
 .cs-btn:hover {
   transform: scale(1.04);
   opacity: 0.85;
 }
+
 .cs-btn:active {
   transform: scale(0.98);
 }
@@ -66,6 +99,7 @@
   cursor: pointer;
   transition: opacity 0.2s ease;
 }
+
 .cs-btn-subscribe:hover {
   opacity: 0.8;
 }
@@ -82,9 +116,11 @@
   color: #333;
   caret-color: #dd72a6;
 }
+
 .cs-input::placeholder {
   color: #c4c2c2;
 }
+
 .cs-input:focus {
   outline: none;
 }

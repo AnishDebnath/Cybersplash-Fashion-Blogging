@@ -3,7 +3,7 @@
     <div class="site-info">
       <?php
         wp_nav_menu( [
-          'theme_location' => 'primary',
+          'theme_location' => 'footer',
           'menu'           => 'footer-menu',
         ] );
       ?>

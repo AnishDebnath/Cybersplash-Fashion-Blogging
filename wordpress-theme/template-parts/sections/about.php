@@ -1,7 +1,7 @@
 <?php
 /**
  * About Section Template Part
- * Maps to: App.tsx About component
+ * Maps to: React App.tsx About component
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -30,7 +30,7 @@ if ( ! defined( 'ABSPATH' ) ) {
            width: 281.58px;
            height: 309.86px;"
     >
-      <img src="<?= esc_url( get_template_directory_uri() . '/assets/images/abb8c6.png') ?>"
+      <img src="<?= esc_url( get_template_directory_uri() . '/assets/images/bb8c6.png') ?>"
            alt="Stars"
       />
     </div>
@@ -46,7 +46,7 @@ if ( ! defined( 'ABSPATH' ) ) {
            overflow: hidden;
            clip: rect(0 1043.98 1062 0);"
     >
-      <img src="<?= esc_url( get_template_directory_uri() . '/assets/images/a1b2ff.png') ?>"
+      <img src="<?= esc_url( get_template_directory_uri() . '/assets/images/1b2ff.png') ?>"
            alt="Portrait"
            style="position: absolute; left: -1.31px; top: -3.87px; width: 1065.06px; height: 1065.06px; object-fit: cover;"
       />
@@ -61,7 +61,7 @@ if ( ! defined( 'ABSPATH' ) ) {
            width: 619.63px;
            height: 35.88px;"
     >
-      <img src="<?= esc_url( get_template_directory_uri() . '/assets/images/ad81b9.png') ?>"
+      <img src="<?= esc_url( get_template_directory_uri() . '/assets/images/d81b9.png') ?>"
            alt="Golden line"
       />
     </div>
@@ -75,7 +75,7 @@ if ( ! defined( 'ABSPATH' ) ) {
            width: 405.55px;
            height: 37.34px;"
     >
-      <img src="<?= esc_url( get_template_directory_uri() . '/assets/images/aa9870.png') ?>"
+      <img src="<?= esc_url( get_template_directory_uri() . '/assets/images/a9870.png') ?>"
            alt="Gold border"
       />
     </div>
@@ -89,7 +89,7 @@ if ( ! defined( 'ABSPATH' ) ) {
            width: 384px;
            height: 30.88px;"
     >
-      <img src="<?= esc_url( get_template_directory_uri() . '/assets/images/a3ca48.png') ?>"
+      <img src="<?= esc_url( get_template_directory_uri() . '/assets/images/3ca48.png') ?>"
            alt="Gold divider"
       />
     </div>
@@ -103,12 +103,12 @@ if ( ! defined( 'ABSPATH' ) ) {
            width: 260.03px;
            height: 470.66px;"
     >
-      <img src="<?= esc_url( get_template_directory_uri() . '/assets/images/ae2eb5.png') ?>"
+      <img src="<?= esc_url( get_template_directory_uri() . '/assets/images/e2eb5.png') ?>"
            alt="Bouquet"
       />
     </div>
 
-    <!-- Gold abstract top -->
+    <!-- Glitter abstract top -->
     <div class="cs-abstract-top"
          style="
            position: absolute;
@@ -117,7 +117,7 @@ if ( ! defined( 'ABSPATH' ) ) {
            width: 245.44px;
            height: 341.48px;"
     >
-      <img src="<?= esc_url( get_template_directory_uri() . '/assets/images/a11571.png') ?>"
+      <img src="<?= esc_url( get_template_directory_uri() . '/assets/images/11571.png') ?>"
            alt="Abstract"
       />
     </div>
@@ -147,7 +147,7 @@ if ( ! defined( 'ABSPATH' ) ) {
            width: 432.53px;
            height: 414.16px;"
     >
-      <img src="<?= esc_url( get_template_directory_uri() . '/assets/images/aa0d31.png') ?>"
+      <img src="<?= esc_url( get_template_directory_uri() . '/assets/images/a0d31.png') ?>"
            alt="Confetti"
       />
     </div>

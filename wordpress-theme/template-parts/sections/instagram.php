@@ -1,7 +1,7 @@
 <?php
 /**
  * Instagram Section Template Part
- * Maps to: App.tsx Instagram component
+ * Maps to: React App.tsx Instagram component
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -29,7 +29,7 @@ if ( ! defined( 'ABSPATH' ) ) {
            width: 686.05px;
            height: 63.17px;"
     >
-      <img src="<?= esc_url( get_template_directory_uri() . '/assets/images/ia9870.png') ?>"
+      <img src="<?= esc_url( get_template_directory_uri() . '/assets/images/a9870.png') ?>"
            alt="Gold border"
       />
     </div>
@@ -43,7 +43,7 @@ if ( ! defined( 'ABSPATH' ) ) {
            width: 281.58px;
            height: 309.86px;"
     >
-      <img src="<?= esc_url( get_template_directory_uri() . '/assets/images/ibb8c6.png') ?>"
+      <img src="<?= esc_url( get_template_directory_uri() . '/assets/images/bb8c6.png') ?>"
            alt="Glitter stars"
       />
     </div>
@@ -54,8 +54,8 @@ if ( ! defined( 'ABSPATH' ) ) {
     >
       <div class="cs-portrait-card"
            style="width: 639.54px; height: 724.83px; overflow: hidden; clip: rect(0 639.54 1136.96 0);"
-        >
-        <img src="<?= esc_url( get_template_directory_uri() . '/assets/images/ie3a76.png') ?>"
+         >
+        <img src="<?= esc_url( get_template_directory_uri() . '/assets/images/e3a76.png') ?>"
              alt="Portrait"
              style="position: absolute; left: 0; top: -206.05px; width: 639.54px; height: 1136.96px; object-fit: cover;"
         />
@@ -63,8 +63,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 
       <div class="cs-portrait-card"
            style="width: 639.54px; height: 724.83px; overflow: hidden; clip: rect(0 639.54 1136.96 0);"
-        >
-        <img src="<?= esc_url( get_template_directory_uri() . '/assets/images/if7dab.png') ?>"
+         >
+        <img src="<?= esc_url( get_template_directory_uri() . '/assets/images/f7dab.png') ?>"
              alt="Portrait"
              style="position: absolute; left: 0; top: -206.05px; width: 639.54px; height: 1136.96px; object-fit: cover;"
         />
@@ -72,8 +72,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 
       <div class="cs-portrait-card"
            style="width: 640.91px; height: 724.86px; overflow: hidden; clip: rect(0 640.91 1112.21 0);"
-        >
-        <img src="<?= esc_url( get_template_directory_uri() . '/assets/images/i6bb39.png') ?>"
+         >
+        <img src="<?= esc_url( get_template_directory_uri() . '/assets/images/6bb39.png') ?>"
              alt="Portrait"
              style="position: absolute; left: 0; top: -193.67px; width: 640.91px; height: 1112.21px; object-fit: cover;"
         />
@@ -89,7 +89,7 @@ if ( ! defined( 'ABSPATH' ) ) {
            width: 768px;
            height: 30.72px;"
     >
-      <img src="<?= esc_url( get_template_directory_uri() . '/assets/images/ia2e9e.png') ?>"
+      <img src="<?= esc_url( get_template_directory_uri() . '/assets/images/a2e9e.png') ?>"
            alt="Gold line"
       />
     </div>
@@ -103,7 +103,7 @@ if ( ! defined( 'ABSPATH' ) ) {
            width: 619.63px;
            height: 35.88px;"
     >
-      <img src="<?= esc_url( get_template_directory_uri() . '/assets/images/id81b9.png') ?>"
+      <img src="<?= esc_url( get_template_directory_uri() . '/assets/images/d81b9.png') ?>"
            alt="Horizontal line"
       />
     </div>
@@ -120,7 +120,7 @@ if ( ! defined( 'ABSPATH' ) ) {
            color: #dd72a6;
            text-align: center;"
     >
-      <p style="margin: 0;">Follow on instagram @cybersplase</p>
+      <p style="margin: 0;">Follow on instagram @cybersplash</p>
     </div>
 
     <!-- Follow tagline -->
