@@ -127,6 +127,7 @@ const i90bed = `${A}/90bed.png`
 const i12eqsd = `${A}/12eqsd.png`
 const id67f4 = `${A}/d67f4.svg`
 const ifaeb8 = `${A}/faeb8.svg`
+const ifa231 = `${A}/fa231.png`
 
 // Newsletter
 const n3748b = `${A}/3748b.png`
@@ -288,40 +289,46 @@ function Hero() {
       </Box>
 
       {/* ── Row 2: Featured Posts portraits (original t + 960) ── */}
-      <Box l={82.67} t={2793} w={536.14} h={662.06} clip>
+      <Box l={82.67} t={2793} w={536.14} h={662.06} clip style={{ zIndex: 1 }}>
         <div style={{ position: 'absolute', left: 0, top: -45.59, width: 536.14, height: 753.26 }}><Img src={hb1a24} /></div>
       </Box>
-      <Box l={698.93} t={2793} w={531.89} h={662.07} clip>
+      <Box l={698.93} t={2793} w={531.89} h={662.07} clip style={{ zIndex: 1 }}>
         <div style={{ position: 'absolute', left: 0, top: -67.37, width: 531.89, height: 796.83 }}><Img src={h17c7b} /></div>
       </Box>
-      <Box l={1310.69} t={2793} w={522.14} h={662.08} clip>
+      <Box l={1310.69} t={2793} w={522.14} h={662.08} clip style={{ zIndex: 1 }}>
         <div style={{ position: 'absolute', left: -9.17, top: 0, width: 540.47, height: 662.08 }}><Img src={hf0d89} /></div>
       </Box>
 
       {/* Section label masks */}
-      <Box l={136.78} t={3067} w={429.49} h={85.75}>
+      <Box l={136.78} t={3067} w={429.49} h={85.75} style={{ zIndex: 2 }}>
         <Masked mask={h94b81} mw={429.49} mh={85.75}><Img src={h156f9} /></Masked>
       </Box>
-      <Box l={751.74} t={3067} w={416.52} h={85.75}>
+      <Box l={751.74} t={3067} w={416.52} h={85.75} style={{ zIndex: 2 }}>
         <Masked mask={hf6927} mw={416.52} mh={85.75}><Img src={hcdcd1} /></Masked>
       </Box>
-      <Box l={1351.29} t={3067} w={452.31} h={85.75}>
+      <Box l={1351.29} t={3067} w={452.31} h={85.75} style={{ zIndex: 2 }}>
         <Masked mask={h8e0c6} mw={452.31} mh={85.75}><Img src={h26994} /></Masked>
       </Box>
 
       {/* Section label text */}
-      <Txt l={172.52} r={1386.56} t={3107} style={{ fontFamily: 'Inter', fontSize: 30, lineHeight: '42px', color: '#fff', textAlign: 'center', letterSpacing: '2px' }}>
+      <Txt l={172.52} r={1386.56} t={3107} style={{ fontFamily: 'Inter', fontSize: 30, lineHeight: '42px', color: '#fff', textAlign: 'center', letterSpacing: '2px', zIndex: 3 }}>
         <p style={{ margin: 0 }}>FEATURED POSTS</p>
       </Txt>
-      <Txt l={800.49} r={793.44} t={3107} style={{ fontFamily: 'Inter', fontSize: 30, lineHeight: '42px', color: '#fff', textAlign: 'center', letterSpacing: '2px' }}>
+      <Txt l={800.49} r={793.44} t={3107} style={{ fontFamily: 'Inter', fontSize: 30, lineHeight: '42px', color: '#fff', textAlign: 'center', letterSpacing: '2px', zIndex: 3 }}>
         <p style={{ margin: 0 }}>{"EDITOR'S PICKS"}</p>
       </Txt>
-      <Txt l={1377.47} r={139.64} t={3107} style={{ fontFamily: 'Inter', fontSize: 30, lineHeight: '42px', color: '#fff', textAlign: 'center', letterSpacing: '2px' }}>
+      <Txt l={1377.47} r={139.64} t={3107} style={{ fontFamily: 'Inter', fontSize: 30, lineHeight: '42px', color: '#fff', textAlign: 'center', letterSpacing: '2px', zIndex: 3 }}>
         <p style={{ margin: 0 }}>LATEST IN FASHION</p>
       </Txt>
 
       {/* Bottom decorations */}
       <Box l={1625.88} t={3353} w={355.44} h={331.75}><Img src={h7c0cc} /></Box>
+      <Box r={1643.18} t={3433} w={317.03} h={505.47} clip>
+        <div style={{ position: 'absolute', left: -20.63, top: 0, width: 339.3, height: 505.47, transform: 'scaleX(-1)' }}><Img src={h2fc78} /></div>
+      </Box>
+      <Box r={1222.72} t={3413} w={447.81} h={173.11} clip>
+        <div style={{ position: 'absolute', left: 0, top: -15.04, width: 447.81, height: 203.19, transform: 'scaleX(-1)' }}><Img src={h9edc9} /></div>
+      </Box>
       <Box l={1222.72} t={3413} w={447.81} h={173.11} clip>
         <div style={{ position: 'absolute', left: 0, top: -15.04, width: 447.81, height: 203.19 }}><Img src={h9edc9} /></div>
       </Box>
@@ -355,17 +362,17 @@ function Editorial() {
       <Box l={599.74} t={1558.76} w={768} h={44.47}><Img src={hd81b9} /></Box>
 
       {/* Date label */}
-      <Txt l={724.78} t={1212.9} style={{ fontFamily: 'Inter', fontSize: 28.1, letterSpacing: '6.92px', color: '#000', textAlign: 'center' }}>
+      <Txt l={724.78} t={1222.9} style={{ fontFamily: 'Inter', fontSize: 28.1, letterSpacing: '6.92px', color: '#000', textAlign: 'center' }}>
         <p style={{ margin: 0 }}>MARCH 2026 — FASHION</p>
       </Txt>
 
       {/* Title */}
-      <Txt l={421.29} r={379.18} t={1330} style={{ fontFamily: 'Lora', fontStyle: 'italic', fontSize: 64, lineHeight: '89px', color: '#dd72a6', textAlign: 'center' }}>
+      <Txt l={421.29} r={379.18} t={1330} style={{ fontFamily: 'Lora', fontStyle: 'italic', fontSize: 70, lineHeight: '89px', color: '#dd72a6', textAlign: 'center' }}>
         <p style={{ margin: 0 }}>The Return of Effortless Elegance</p>
       </Txt>
 
       {/* Description */}
-      <Txt l={296.73} r={234.39} t={1468} style={{ fontFamily: 'Alice', fontSize: 29, lineHeight: '40px', color: '#000', textAlign: 'center' }}>
+      <Txt l={296.73} r={234.39} t={1468} style={{ fontFamily: 'Alice', fontSize: 34, lineHeight: '40px', color: '#000', textAlign: 'center', fontStyle: 'italic' }}>
         <p style={{ margin: 0 }}>Fashion trends may come and go, but true elegance remains timeless. This season</p>
         <p style={{ margin: 0 }}>embraces soft tones, minimal silhouettes, and confident simplicity that defines modern</p>
         <p style={{ margin: 0 }}>style.</p>
@@ -441,41 +448,41 @@ function LatestStories() {
 
       {/* ── Row 1 article text ── */}
       {/* Left article */}
-      <Txt l={91.61} r={1376.78} t={313.56} style={{ fontFamily: 'Inter', fontWeight: 700, fontSize: 22.1, lineHeight: '30.922px', color: '#000', textAlign: 'center', letterSpacing: '5.5323px' }}>
+      <Txt l={91.61} r={1376.78} t={313.56} style={{ fontFamily: 'Inter', fontWeight: 700, fontSize: 22.1, lineHeight: '30.922px', color: '#000', textAlign: 'center', letterSpacing: '4.5323px' }}>
         <p style={{ margin: 0 }}>MARCH 1, 2026 — LIFESTYLE</p>
       </Txt>
-      <Txt l={110.8} r={1401.54} t={396.75} className="cs-article-title" style={{ fontFamily: 'Lora', fontStyle: 'italic', fontSize: 38, lineHeight: '42px', color: '#dd72a6', textAlign: 'center' }}>
+      <Txt l={110.8} r={1401.54} t={396.75} className="cs-article-title" style={{ fontFamily: 'Lora', fontStyle: 'italic', fontSize: 44, lineHeight: '42px', color: '#dd72a6', textAlign: 'center' }}>
         <p style={{ margin: 0 }}>The Royal Aesthetic:</p>
         <p style={{ margin: 0 }}>Inspired Living</p>
       </Txt>
-      <Txt l={74.6} r={1365.33} t={1239.31} style={{ fontFamily: 'Alice', fontSize: 25, lineHeight: '34px', color: '#000', textAlign: 'center' }}>
+      <Txt l={74.6} r={1365.33} t={1239.31} style={{ fontFamily: 'Alice', fontSize: 28, fontStyle: 'italic', lineHeight: '34px', color: '#000', textAlign: 'center' }}>
         <p style={{ margin: 0 }}>Step into a world of timeless</p>
         <p style={{ margin: 0 }}>elegance inspired by rich textures</p>
         <p style={{ margin: 0 }}>and graceful living.</p>
       </Txt>
 
       {/* Center article */}
-      <Txt l={742.37} r={750.71} t={313.56} style={{ fontFamily: 'Inter', fontWeight: 700, fontSize: 22.5, lineHeight: '30.922px', color: '#000', textAlign: 'center', letterSpacing: '5.5323px' }}>
+      <Txt l={742.37} r={750.71} t={313.56} style={{ fontFamily: 'Inter', fontWeight: 700, fontSize: 22.5, lineHeight: '30.922px', color: '#000', textAlign: 'center', letterSpacing: '4.5323px' }}>
         <p style={{ margin: 0 }}>MARCH 1, 2026 — FASHION</p>
       </Txt>
-      <Txt l={716.86} r={744.64} t={396.75} style={{ fontFamily: 'Lora', fontStyle: 'italic', fontSize: 38, lineHeight: '42px', color: '#dd72a6', textAlign: 'center' }}>
+      <Txt l={716.86} r={744.64} t={396.75} style={{ fontFamily: 'Lora', fontStyle: 'italic', fontSize: 44, lineHeight: '42px', color: '#dd72a6', textAlign: 'center' }}>
         <p style={{ margin: 0 }}>Denim Diaries: Casual</p>
         <p style={{ margin: 0 }}>Meets Chic</p>
       </Txt>
-      <Txt l={707.71} r={708} t={1302.49} style={{ fontFamily: 'Alice', fontSize: 25, lineHeight: '34px', color: '#000', textAlign: 'center' }}>
+      <Txt l={707.71} r={708} t={1302.49} style={{ fontFamily: 'Alice', fontSize: 28, fontStyle: 'italic', lineHeight: '34px', color: '#000', textAlign: 'center' }}>
         <p style={{ margin: 0 }}>Denim redefined with elegance and</p>
         <p style={{ margin: 0 }}>everyday comfort.</p>
       </Txt>
 
       {/* Right article */}
-      <Txt l={1365.47} r={145.35} t={315.54} style={{ fontFamily: 'Inter', fontWeight: 700, fontSize: 22.1, lineHeight: '30.922px', color: '#000', textAlign: 'center', letterSpacing: '5.5323px' }}>
+      <Txt l={1365.47} r={145.35} t={315.54} style={{ fontFamily: 'Inter', fontWeight: 700, fontSize: 22.1, lineHeight: '30.922px', color: '#000', textAlign: 'center', letterSpacing: '4.5323px' }}>
         <p style={{ margin: 0 }}>MARCH 1, 2026 — BEAUTY</p>
       </Txt>
-      <Txt l={1327.17} r={91.61} t={398.72} style={{ fontFamily: 'Lora', fontStyle: 'italic', fontSize: 38, lineHeight: '42px', color: '#dd72a6', textAlign: 'center' }}>
+      <Txt l={1327.17} r={91.61} t={398.72} style={{ fontFamily: 'Lora', fontStyle: 'italic', fontSize: 44, lineHeight: '42px', color: '#dd72a6', textAlign: 'center' }}>
         <p style={{ margin: 0 }}>My Story: A Journey into</p>
         <p style={{ margin: 0 }}>Style</p>
       </Txt>
-      <Txt l={1342.11} r={65.05} t={1065.43} style={{ fontFamily: 'Alice', fontSize: 25, lineHeight: '34px', color: '#000', textAlign: 'center' }}>
+      <Txt l={1342.11} r={65.05} t={1065.43} style={{ fontFamily: 'Alice', fontSize: 28, fontStyle: 'italic', lineHeight: '34px', color: '#000', textAlign: 'center' }}>
         <p style={{ margin: 0 }}>A glimpse into how fashion became</p>
         <p style={{ margin: 0 }}>more than just clothing — it became</p>
         <p style={{ margin: 0 }}>a statement of identity.</p>
@@ -509,39 +516,39 @@ function LatestStories() {
 
       {/* ── Row 2 article text ── */}
       {/* Left */}
-      <Txt l={123.01} r={1390.1} t={1417.91} style={{ fontFamily: 'Inter', fontWeight: 700, fontSize: 22.3, lineHeight: '30.922px', color: '#000', textAlign: 'center', letterSpacing: '5.5323px' }}>
+      <Txt l={123.01} r={1390.1} t={1417.91} style={{ fontFamily: 'Inter', fontWeight: 700, fontSize: 22.3, lineHeight: '30.922px', color: '#000', textAlign: 'center', letterSpacing: '4.5323px' }}>
         <p style={{ margin: 0 }}>MARCH 1, 2026 — TRENDS</p>
       </Txt>
-      <Txt l={61.14} r={1338.19} t={1476.48} style={{ fontFamily: 'Lora', fontStyle: 'italic', fontSize: 38, lineHeight: '42px', color: '#dd72a6', textAlign: 'center' }}>
+      <Txt l={61.14} r={1338.19} t={1476.48} style={{ fontFamily: 'Lora', fontStyle: 'italic', fontSize: 44, lineHeight: '42px', color: '#dd72a6', textAlign: 'center' }}>
         <p style={{ margin: 0 }}>Minimalism: Less is More</p>
       </Txt>
-      <Txt l={112.11} r={1402.84} t={2370.27} style={{ fontFamily: 'Alice', fontSize: 25, lineHeight: '34px', color: '#000', textAlign: 'center' }}>
+      <Txt l={112.11} r={1402.84} t={2370.27} style={{ fontFamily: 'Alice', fontSize: 28, fontStyle: 'italic', lineHeight: '34px', color: '#000', textAlign: 'center' }}>
         <p style={{ margin: 0 }}>Clean cuts and neutral tones</p>
         <p style={{ margin: 0 }}>redefine modern fashion.</p>
       </Txt>
 
       {/* Center */}
-      <Txt l={742.37} r={750.71} t={1454.14} style={{ fontFamily: 'Inter', fontWeight: 700, fontSize: 22.5, lineHeight: '30.922px', color: '#000', textAlign: 'center', letterSpacing: '5.5323px' }}>
+      <Txt l={742.37} r={750.71} t={1454.14} style={{ fontFamily: 'Inter', fontWeight: 700, fontSize: 22.5, lineHeight: '30.922px', color: '#000', textAlign: 'center', letterSpacing: '4.5323px' }}>
         <p style={{ margin: 0 }}>MARCH 1, 2026 — FASHION</p>
       </Txt>
-      <Txt l={724.53} r={743.87} t={1530.3} style={{ fontFamily: 'Lora', fontStyle: 'italic', fontSize: 38, lineHeight: '42px', color: '#dd72a6', textAlign: 'center' }}>
+      <Txt l={724.53} r={743.87} t={1530.3} style={{ fontFamily: 'Lora', fontStyle: 'italic', fontSize: 44, lineHeight: '42px', color: '#dd72a6', textAlign: 'center' }}>
         <p style={{ margin: 0 }}>Street Style: New York</p>
         <p style={{ margin: 0 }}>Edition</p>
       </Txt>
-      <Txt l={704.58} r={695.95} t={2466.5} style={{ fontFamily: 'Alice', fontSize: 25, lineHeight: '34px', color: '#000', textAlign: 'center' }}>
+      <Txt l={704.58} r={695.95} t={2466.5} style={{ fontFamily: 'Alice', fontSize: 28, fontStyle: 'italic', lineHeight: '34px', color: '#000', textAlign: 'center' }}>
         <p style={{ margin: 0 }}>Bold and confident looks inspired by</p>
         <p style={{ margin: 0 }}>urban fashion culture.</p>
       </Txt>
 
       {/* Right */}
-      <Txt l={1401.32} r={136.34} t={1232.62} style={{ fontFamily: 'Inter', fontWeight: 700, fontSize: 22, lineHeight: '30.922px', color: '#000', textAlign: 'center', letterSpacing: '5.5323px' }}>
+      <Txt l={1401.32} r={136.34} t={1232.62} style={{ fontFamily: 'Inter', fontWeight: 700, fontSize: 22, lineHeight: '30.922px', color: '#000', textAlign: 'center', letterSpacing: '4.5323px' }}>
         <p style={{ margin: 0 }}>MARCH 1, 2026 — STYLE</p>
       </Txt>
-      <Txt l={1352.22} r={76.09} t={1315.91} style={{ fontFamily: 'Lora', fontStyle: 'italic', fontSize: 38, lineHeight: '42px', color: '#dd72a6', textAlign: 'center' }}>
+      <Txt l={1352.22} r={76.09} t={1315.91} style={{ fontFamily: 'Lora', fontStyle: 'italic', fontSize: 44, lineHeight: '42px', color: '#dd72a6', textAlign: 'center' }}>
         <p style={{ margin: 0 }}>Modern Muse: Everyday</p>
         <p style={{ margin: 0 }}>Glam</p>
       </Txt>
-      <Txt l={1331.69} r={63.79} t={2229.06} style={{ fontFamily: 'Alice', fontSize: 25, lineHeight: '34px', color: '#000', textAlign: 'center' }}>
+      <Txt l={1331.69} r={63.79} t={2229.06} style={{ fontFamily: 'Alice', fontSize: 28, fontStyle: 'italic', lineHeight: '34px', color: '#000', textAlign: 'center' }}>
         <p style={{ margin: 0 }}>Effortlessly blending comfort with</p>
         <p style={{ margin: 0 }}>sophistication, this look captures the</p>
         <p style={{ margin: 0 }}>essence of modern fashion with a</p>
@@ -569,14 +576,14 @@ function LatestStories() {
 
       {/* ── Row 3 article text ── */}
       {/* Left */}
-      <Txt l={118.44} r={1392.38} t={2524.71} style={{ fontFamily: 'Inter', fontWeight: 700, fontSize: 22.1, lineHeight: '30.922px', color: '#000', textAlign: 'center', letterSpacing: '5.5323px' }}>
+      <Txt l={118.44} r={1392.38} t={2524.71} style={{ fontFamily: 'Inter', fontWeight: 700, fontSize: 22.1, lineHeight: '30.922px', color: '#000', textAlign: 'center', letterSpacing: '4.5323px' }}>
         <p style={{ margin: 0 }}>MARCH 1, 2026 — BEAUTY</p>
       </Txt>
-      <Txt l={88.65} r={1368.13} t={2598.05} style={{ fontFamily: 'Lora', fontStyle: 'italic', fontSize: 38, lineHeight: '42px', color: '#dd72a6', textAlign: 'center' }}>
+      <Txt l={88.65} r={1368.13} t={2598.05} style={{ fontFamily: 'Lora', fontStyle: 'italic', fontSize: 44, lineHeight: '42px', color: '#dd72a6', textAlign: 'center' }}>
         <p style={{ margin: 0 }}>{"Glow & Grace: Natural"}</p>
         <p style={{ margin: 0 }}>Beauty Trends</p>
       </Txt>
-      <Txt l={115.41} r={1388.05} t={3438.84} style={{ fontFamily: 'Alice', fontSize: 25, lineHeight: '34px', color: '#000', textAlign: 'center' }}>
+      <Txt l={115.41} r={1388.05} t={3438.84} style={{ fontFamily: 'Alice', fontSize: 28, fontStyle: 'italic', lineHeight: '34px', color: '#000', textAlign: 'center' }}>
         <p style={{ margin: 0 }}>Embrace a fresh, radiant look</p>
         <p style={{ margin: 0 }}>with minimal makeup and</p>
         <p style={{ margin: 0 }}>skincare-focused beauty that</p>
@@ -584,14 +591,14 @@ function LatestStories() {
       </Txt>
 
       {/* Center */}
-      <Txt l={753.62} r={739.46} t={2627.58} style={{ fontFamily: 'Inter', fontWeight: 700, fontSize: 22.5, lineHeight: '30.922px', color: '#000', textAlign: 'center', letterSpacing: '5.5323px' }}>
+      <Txt l={753.62} r={739.46} t={2627.58} style={{ fontFamily: 'Inter', fontWeight: 700, fontSize: 22.5, lineHeight: '30.922px', color: '#000', textAlign: 'center', letterSpacing: '4.5323px' }}>
         <p style={{ margin: 0 }}>MARCH 1, 2026 — FASHION</p>
       </Txt>
-      <Txt l={713.07} r={704.44} t={2703.74} style={{ fontFamily: 'Lora', fontStyle: 'italic', fontSize: 38, lineHeight: '42px', color: '#dd72a6', textAlign: 'center' }}>
+      <Txt l={713.07} r={704.44} t={2703.74} style={{ fontFamily: 'Lora', fontStyle: 'italic', fontSize: 44, lineHeight: '42px', color: '#dd72a6', textAlign: 'center' }}>
         <p style={{ margin: 0 }}>Effortless Layers: Styling</p>
         <p style={{ margin: 0 }}>with Ease</p>
       </Txt>
-      <Txt l={728.19} r={728.69} t={3431.3} style={{ fontFamily: 'Alice', fontSize: 25, lineHeight: '34px', color: '#000', textAlign: 'center' }}>
+      <Txt l={728.19} r={728.69} t={3431.3} style={{ fontFamily: 'Alice', fontSize: 28, fontStyle: 'italic', lineHeight: '34px', color: '#000', textAlign: 'center' }}>
         <p style={{ margin: 0 }}>Layering meets elegance with</p>
         <p style={{ margin: 0 }}>versatile pieces that create a</p>
         <p style={{ margin: 0 }}>balanced, stylish look perfect for</p>
@@ -599,14 +606,14 @@ function LatestStories() {
       </Txt>
 
       {/* Right */}
-      <Txt l={1359.66} r={108.73} t={2429.24} style={{ fontFamily: 'Inter', fontWeight: 700, fontSize: 22.1, lineHeight: '30.922px', color: '#000', textAlign: 'center', letterSpacing: '5.5323px' }}>
+      <Txt l={1359.66} r={108.73} t={2429.24} style={{ fontFamily: 'Inter', fontWeight: 700, fontSize: 22.1, lineHeight: '30.922px', color: '#000', textAlign: 'center', letterSpacing: '4.5323px' }}>
         <p style={{ margin: 0 }}>MARCH 1, 2026 — LIFESTYLE</p>
       </Txt>
-      <Txt l={1318.95} r={75.76} t={2506.89} style={{ fontFamily: 'Lora', fontStyle: 'italic', fontSize: 38, lineHeight: '42px', color: '#dd72a6', textAlign: 'center' }}>
+      <Txt l={1318.95} r={75.76} t={2506.89} style={{ fontFamily: 'Lora', fontStyle: 'italic', fontSize: 44, lineHeight: '42px', color: '#dd72a6', textAlign: 'center' }}>
         <p style={{ margin: 0 }}>Cozy Chic: Comfort Meets</p>
         <p style={{ margin: 0 }}>Style</p>
       </Txt>
-      <Txt l={1361.8} r={82.87} t={3450.26} style={{ fontFamily: 'Alice', fontSize: 25, lineHeight: '34px', color: '#000', textAlign: 'center' }}>
+      <Txt l={1361.8} r={82.87} t={3450.26} style={{ fontFamily: 'Alice', fontSize: 28, fontStyle: 'italic', lineHeight: '34px', color: '#000', textAlign: 'center' }}>
         <p style={{ margin: 0 }}>Soft layers and relaxed</p>
         <p style={{ margin: 0 }}>silhouettes redefine comfort</p>
         <p style={{ margin: 0 }}>dressing while keeping your style</p>
@@ -785,7 +792,7 @@ function About() {
       <Txt l={1214.75} r={109.93} t={166} style={{ fontFamily: 'Lora', fontStyle: 'italic', fontSize: 84.3, lineHeight: '105.42px', color: '#dd72a6', textAlign: 'center' }}>
         <p style={{ margin: 0, width: 580 }}>Cybersplash</p>
       </Txt>
-      <Txt l={1149.91} r={179.05} t={580} style={{ fontFamily: 'Alice', fontStyle: 'italic', fontSize: 35, lineHeight: '48px', color: '#000', textAlign: 'center' }}>
+      <Txt l={1149.91} r={179.05} t={580} style={{ fontFamily: 'Alice', fontStyle: 'italic', fontSize: 38, letterSpacing: '2px', lineHeight: '52px', color: '#000', textAlign: 'center' }}>
         <p style={{ margin: 0, borderStyle: 'none', borderColor: 'rgba(0,0,0,0)' }}>Cybersplash is a modern</p>
         <p style={{ margin: 0 }}>fashion and lifestyle platform</p>
         <p style={{ margin: 0 }}>for women who embrace</p>
@@ -853,8 +860,8 @@ function Instagram() {
       {/* Golden floral branch right */}
       <Box l={1663.56} t={1140.23} w={256.44} h={599.84}><Img src={i8c95f} /></Box>
 
-      <Box l={16} t={34} w={200} h={560} style={{ pointerEvents: 'none' }}>
-        <Img src={i12eqsd} style={{ objectFit: 'contain', objectPosition: 'left top' }} />
+      <Box l={12} t={12} w={220} h={560} style={{ transform: 'scaleX(-1)' }}>
+        <Img src={ifa231} style={{ objectFit: 'contain', objectPosition: 'left top' }} />
       </Box>
 
       {/* Instagram title */}
@@ -1007,16 +1014,16 @@ function Footer() {
 }
 
 export default function App() {
-  const [scale, setScale] = useState(() => window.innerWidth / DESIGN_W)
+  const [scale, setScale] = useState(() => document.documentElement.clientWidth / DESIGN_W)
 
   useEffect(() => {
-    const update = () => setScale(window.innerWidth / DESIGN_W)
+    const update = () => setScale(document.documentElement.clientWidth / DESIGN_W)
     window.addEventListener('resize', update)
     return () => window.removeEventListener('resize', update)
   }, [])
 
   return (
-    <div style={{ width: '100%', position: 'relative', height: DESIGN_H * scale }}>
+    <div style={{ width: '100%', position: 'relative', height: DESIGN_H * scale, overflowX: 'hidden' }}>
       <div style={{
         width: DESIGN_W,
         position: 'absolute',

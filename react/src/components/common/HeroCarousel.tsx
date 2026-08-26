@@ -31,7 +31,7 @@ function HeroCarousel() {
     background: '#fff',
     border: 'none',
     display: 'flex', alignItems: 'center', justifyContent: 'center',
-    cursor: 'pointer', color: '#1e293b', fontSize: 32, lineHeight: 1,
+    cursor: 'pointer', color: '#1e293b', fontSize: 20, lineHeight: 1,
     userSelect: 'none', zIndex: 10,
     boxShadow: '0 8px 24px rgba(0,0,0,0.16)',
     transition: 'background 0.2s, color 0.2s, transform 0.2s',
@@ -93,7 +93,7 @@ function HeroCarousel() {
             ))}
           </h2>
           <div style={{ marginTop: 14, animationDelay: '540ms' }}>
-            <button className="cs-hero-cta" type="button">EXPLORE NOW <span>→</span></button>
+            <button className="cs-hero-cta" type="button">EXPLORE NOW <span>➜</span></button>
           </div>
         </div>
 
@@ -106,8 +106,8 @@ function HeroCarousel() {
         </a>
 
         {/* Arrows */}
-        <button aria-label="Previous slide" onClick={prev} style={{ ...arrowStyle, left: 174 }}><span className="cs-hero-arrow-icon">←</span></button>
-        <button aria-label="Next slide" onClick={next} style={{ ...arrowStyle, right: 174 }}><span className="cs-hero-arrow-icon">→</span></button>
+        <button aria-label="Previous slide" onClick={prev} style={{ ...arrowStyle, left: 174 }}><span className="cs-hero-arrow-icon" style={{ transform: 'rotate(180deg)' }}>➜</span></button>
+        <button aria-label="Next slide" onClick={next} style={{ ...arrowStyle, right: 174 }}><span className="cs-hero-arrow-icon">➜</span></button>
 
         {/* Dot indicators */}
         <div style={{ position: 'absolute', bottom: 30, left: '50%', transform: 'translateX(-50%)', display: 'flex', gap: 10, zIndex: 10 }}>
