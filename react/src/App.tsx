@@ -630,8 +630,8 @@ function LatestStories() {
       </Box>
 
       {/* Left-side decorative flourish near button */}
-      <Box l={150} t={3600.31} w={500} h={180} style={{ pointerEvents: 'none' }}>
-        <Img src={h34asda} style={{ objectFit: 'contain', objectPosition: 'center' }} />
+      <Box l={150} t={3600.31} w={500} h={180} style={{ pointerEvents: 'none', transform: 'scaleX(-1)' }}>
+        <Img src={sc9e88} style={{ objectFit: 'contain', objectPosition: 'center' }} />
       </Box>
 
       {/* ── Explore More button ── */}
@@ -897,13 +897,13 @@ function Newsletter() {
       </Box>
 
       {/* Category label overlays */}
-      <Box l={198.06} t={528.36} w={250.97} h={85.74} style={{ borderRadius: 40 }}>
+      <Box l={198.06} t={528.36} w={250.97} h={85.74}>
         <Masked mask={n4f8cd} mw={250.97} mh={85.74}><Img src={n0d711} /></Masked>
       </Box>
-      <Box l={800.53} t={528.36} w={335.58} h={85.74} style={{ borderRadius: 40 }}>
+      <Box l={800.53} t={528.36} w={335.58} h={85.74}>
         <Masked mask={nb52d5} mw={335.58} mh={85.74}><Img src={n6dcae} /></Masked>
       </Box>
-      <Box l={1486.08} t={528.36} w={215.67} h={85.74} style={{ borderRadius: 40 }}>
+      <Box l={1486.08} t={528.36} w={215.67} h={85.74}>
         <Masked mask={n61810} mw={215.67} mh={85.74}><Img src={n740c4} /></Masked>
       </Box>
 

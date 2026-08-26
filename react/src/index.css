@@ -49,8 +49,135 @@
   animation: cs-hero-image-enter 1.4s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 
+.cs-hero-frame {
+  position: absolute;
+  inset: 40px 55px 70px;
+  overflow: hidden;
+  border-radius: 16px;
+  background: #263326;
+}
+
+.cs-hero-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  background: linear-gradient(90deg, rgba(13, 21, 8, 0.68) 0%, rgba(13, 21, 8, 0.3) 52%, rgba(13, 21, 8, 0.58) 100%), linear-gradient(0deg, rgba(13, 21, 8, 0.44) 0%, rgba(13, 21, 8, 0.08) 58%);
+}
+
+.cs-hero-content {
+  position: absolute;
+  inset: 0;
+  z-index: 4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  padding: 0 220px 20px;
+}
+
 .cs-hero-content>* {
   animation: cs-hero-text-enter 0.8s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.cs-hero-title-accent {
+  color: #dd72a6;
+}
+
+.cs-hero-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  padding: 18px 28px 18px 32px;
+  border: 0;
+  border-radius: 0 36px 36px 0;
+  background: linear-gradient(135deg, #dd72a6 0%, #c1536b 100%);
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-size: 21px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 10px 28px rgba(68, 111, 0, 0.35);
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.cs-hero-cta span {
+  display: grid;
+  width: 31px;
+  height: 31px;
+  place-items: center;
+  border-radius: 50%;
+  background: rgba(117, 37, 64, 0.45);
+  font-size: 19px;
+}
+
+.cs-hero-cta:hover {
+  background: #c1536b;
+  transform: translateY(-2px);
+}
+
+.cs-hero-callout {
+  position: absolute;
+  right: 0;
+  bottom: 42px;
+  z-index: 6;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 330px;
+  min-height: 96px;
+  padding: 12px 30px 12px 18px;
+  box-sizing: border-box;
+  border-radius: 52px 0 0 52px;
+  background: #fff;
+  color: #283044;
+  text-decoration: none;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.16);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cs-hero-callout:hover {
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.22);
+}
+
+.cs-hero-call-icon {
+  position: relative;
+  display: grid;
+  flex: 0 0 62px;
+  width: 62px;
+  height: 62px;
+  place-items: center;
+  border-radius: 50%;
+  background: #f8e3ed;
+  color: #c1536b;
+  font-size: 31px;
+  line-height: 1;
+  text-align: center;
+  transform: translateY(-1px);
+}
+
+.cs-hero-call-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-family: 'Inter', sans-serif;
+}
+
+.cs-hero-call-copy strong {
+  color: #283044;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+.cs-hero-call-copy b {
+  color: #c1536b;
+  font-size: 21px;
+  white-space: nowrap;
+}
+
+.cs-hero-carousel>.cs-hero-frame>button:hover {
+  background: #dd72a6 !important;
+  color: #fff !important;
 }
 
 .cs-hero-arrow-icon {

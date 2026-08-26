@@ -27,101 +27,95 @@ function HeroCarousel() {
 
   const arrowStyle: React.CSSProperties = {
     position: 'absolute', top: '50%', transform: 'translateY(-50%)',
-    width: 78, height: 78, borderRadius: '50%',
-    background: 'rgba(255,255,255,0.15)',
-    border: '2px solid rgba(255,255,255,0.5)',
-    backdropFilter: 'blur(8px)',
+    width: 62, height: 62, borderRadius: '50%',
+    background: '#fff',
+    border: 'none',
     display: 'flex', alignItems: 'center', justifyContent: 'center',
-    cursor: 'pointer', color: '#fff', fontSize: 38, lineHeight: 1,
+    cursor: 'pointer', color: '#1e293b', fontSize: 32, lineHeight: 1,
     userSelect: 'none', zIndex: 10,
-    transition: 'background 0.2s',
+    boxShadow: '0 8px 24px rgba(0,0,0,0.16)',
+    transition: 'background 0.2s, color 0.2s, transform 0.2s',
   }
 
   return (
-    <div style={{ position: 'absolute', left: 0, top: 817, width: 1920, height: 960, overflow: 'hidden' }}>
-      {/* Slides with layered transition */}
-      {SLIDES.map((s, i) => (
-        <div
-          key={i}
-          className={i === active ? 'cs-hero-slide cs-hero-slide-active' : 'cs-hero-slide'}
-          style={{
-            position: 'absolute',
-            inset: 0,
-            overflow: 'hidden',
-            transition: 'opacity 1s cubic-bezier(0.65, 0, 0.35, 1), transform 1s cubic-bezier(0.65, 0, 0.35, 1)',
-            opacity: i === active ? 1 : 0,
-            transform: i === active
-              ? 'translateX(0) scale(1)'
-              : i === 0
-                ? 'translateX(-5%) scale(1.02)'
-                : i === 1
-                  ? 'translateX(5%) scale(1.04)'
-                  : 'translateX(-5%) scale(1.02)',
-          }}
-        >
-          <img
-            key={`${i}-${active}`}
-            className="cs-hero-slide-image"
-            src={s.img}
-            alt=""
+    <div className="cs-hero-carousel" style={{ position: 'absolute', left: 0, top: 817, width: 1920, height: 960, overflow: 'hidden', background: '#fff' }}>
+      <div className="cs-hero-frame">
+        {/* Slides with layered transition */}
+        {SLIDES.map((s, i) => (
+          <div
+            key={i}
+            className={i === active ? 'cs-hero-slide cs-hero-slide-active' : 'cs-hero-slide'}
             style={{
-              width: '100%',
-              height: '100%',
-              objectFit: 'cover',
-              display: 'block',
-              transformOrigin: 'center',
+              position: 'absolute',
+              inset: 0,
+              overflow: 'hidden',
+              transition: 'opacity 1s cubic-bezier(0.65, 0, 0.35, 1), transform 1s cubic-bezier(0.65, 0, 0.35, 1)',
+              opacity: i === active ? 1 : 0,
+              transform: i === active
+                ? 'translateX(0) scale(1)'
+                : i === 0
+                  ? 'translateX(-5%) scale(1.02)'
+                  : i === 1
+                    ? 'translateX(5%) scale(1.04)'
+                    : 'translateX(-5%) scale(1.02)',
             }}
-          />
-        </div>
-      ))}
+          >
+            <img
+              key={`${i}-${active}`}
+              className="cs-hero-slide-image"
+              src={s.img}
+              alt=""
+              style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center', display: 'block', transformOrigin: 'center' }}
+            />
+          </div>
+        ))}
 
-      {/* Dark gradient overlay */}
-      <div style={{ position: 'absolute', inset: 0, zIndex: 2, background: 'linear-gradient(to bottom, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.55) 55%, rgba(0,0,0,0.72) 100%)' }} />
+        {/* Reference-style dark photo treatment */}
+        <div className="cs-hero-overlay" />
 
-      {/* Pink vignette */}
-      <div style={{ position: 'absolute', inset: 0, zIndex: 3, background: 'radial-gradient(ellipse at center, transparent 38%, rgba(193,83,107,0.22) 100%)' }} />
-
-      {/* Text content */}
-      <div key={active} className="cs-hero-content" style={{ position: 'absolute', inset: 0, zIndex: 4, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 26, padding: '0 220px' }}>
-        <p style={{
-          margin: 0, fontFamily: 'Inter', fontSize: 26, letterSpacing: '8px', color: '#f2a8c4', textTransform: 'uppercase',
-          animationDelay: '120ms'
-        }}>
-          {SLIDES[active].label}
-        </p>
-        <div style={{ width: 280, height: 1.5, background: 'linear-gradient(to right, transparent, rgba(201,169,110,0.9), transparent)' }} />
-        <h2 style={{
-          margin: 0, textAlign: 'center', fontFamily: 'Lora', fontStyle: 'italic', fontWeight: 400, fontSize: 108, lineHeight: 1.18, color: '#fff', textShadow: '0 3px 28px rgba(0,0,0,0.45)',
-          animationDelay: '260ms'
-        }}>
-          {SLIDES[active].title}
-        </h2>
-        <p style={{
-          margin: 0, textAlign: 'center', fontFamily: 'Alice', fontSize: 36, lineHeight: 1.55, color: 'rgba(255,255,255,0.87)',
-          animationDelay: '400ms'
-        }}>
-          {SLIDES[active].sub}
-        </p>
-        <div style={{ marginTop: 12, animationDelay: '540ms' }}>
-          <div style={{ display: 'inline-flex', alignItems: 'center', gap: 18, padding: '22px 56px', borderRadius: 60, background: 'linear-gradient(135deg, #dd72a6 0%, #c1536b 100%)', fontFamily: 'Arimo', fontSize: 28, letterSpacing: '5px', color: '#fff', boxShadow: '0 10px 36px rgba(193,83,107,0.45)' }}>
-            EXPLORE NOW <span style={{ fontSize: 24 }}>→</span>
+        {/* Text content */}
+        <div key={active} className="cs-hero-content">
+          <p style={{
+            margin: 0, fontFamily: 'Inter', fontSize: 25, fontWeight: 400, letterSpacing: '2px', color: '#f2a8c4',
+            animationDelay: '120ms'
+          }}>
+            {SLIDES[active].label}
+          </p>
+          <h2 style={{
+            margin: 0, maxWidth: 980, textAlign: 'center', fontFamily: 'Inter', fontStyle: 'normal', fontWeight: 700, fontSize: 72, lineHeight: 1.14, color: '#fff', textShadow: '0 3px 24px rgba(0,0,0,0.42)',
+            animationDelay: '260ms'
+          }}>
+            {SLIDES[active].title.split(' ').map((word, index) => (
+              <React.Fragment key={`${word}-${index}`}>
+                {index > 0 && ' '}
+                <span className={index === SLIDES[active].title.split(' ').length - 1 ? 'cs-hero-title-accent' : undefined}>{word}</span>
+              </React.Fragment>
+            ))}
+          </h2>
+          <div style={{ marginTop: 14, animationDelay: '540ms' }}>
+            <button className="cs-hero-cta" type="button">EXPLORE NOW <span>→</span></button>
           </div>
         </div>
+
+        <a className="cs-hero-callout">
+          <span className="cs-hero-call-icon" aria-hidden="true">☎</span>
+          <span className="cs-hero-call-copy">
+            <strong>CALL US FREE</strong>
+            <b>(1900)-1088-88</b>
+          </span>
+        </a>
+
+        {/* Arrows */}
+        <button aria-label="Previous slide" onClick={prev} style={{ ...arrowStyle, left: 174 }}><span className="cs-hero-arrow-icon">←</span></button>
+        <button aria-label="Next slide" onClick={next} style={{ ...arrowStyle, right: 174 }}><span className="cs-hero-arrow-icon">→</span></button>
+
+        {/* Dot indicators */}
+        <div style={{ position: 'absolute', bottom: 30, left: '50%', transform: 'translateX(-50%)', display: 'flex', gap: 10, zIndex: 10 }}>
+          {SLIDES.map((_, i) => (
+            <button aria-label={`Go to slide ${i + 1}`} key={i} onClick={() => setActive(i)} style={{ height: 8, width: i === active ? 34 : 8, padding: 0, border: 0, borderRadius: 6, background: i === active ? '#dd72a6' : 'rgba(255,255,255,0.65)', cursor: 'pointer', transition: 'width 0.4s ease, background 0.3s ease' }} />
+          ))}
+        </div>
       </div>
-
-      {/* Arrows */}
-      <div onClick={prev} style={{ ...arrowStyle, left: 64 }}><span className="cs-hero-arrow-icon">‹</span></div>
-      <div onClick={next} style={{ ...arrowStyle, right: 64 }}><span className="cs-hero-arrow-icon">›</span></div>
-
-      {/* Dot indicators */}
-      <div style={{ position: 'absolute', bottom: 48, left: '50%', transform: 'translateX(-50%)', display: 'flex', gap: 14, zIndex: 10 }}>
-        {SLIDES.map((_, i) => (
-          <div key={i} onClick={() => setActive(i)} style={{ height: 10, width: i === active ? 50 : 10, borderRadius: 6, background: i === active ? '#dd72a6' : 'rgba(255,255,255,0.45)', cursor: 'pointer', transition: 'width 0.4s ease, background 0.3s ease' }} />
-        ))}
-      </div>
-
-      {/* Bottom gold divider */}
-      <div style={{ position: 'absolute', bottom: 0, left: '50%', transform: 'translateX(-50%)', width: 500, height: 3, zIndex: 10, background: 'linear-gradient(to right, transparent, #c9a96e 40%, #c9a96e 60%, transparent)' }} />
     </div>
   )
 }
