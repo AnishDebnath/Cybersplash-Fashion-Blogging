@@ -417,15 +417,15 @@ function LatestStories() {
       {/* ── Row 1 portraits ── */}
       {/* Left */}
       <Box l={28.23} t={470.93} w={603.38} h={685.8} clip className="cs-portrait-card">
-        <div className="cs-card-img" style={{ position: 'absolute', left: 0, top: -34.2, width: 603.38, height: 754.22 }}><Img src={s8bd87} /></div>
+        <div className="cs-card-img" style={{ zIndex: 1, position: 'absolute', left: 0, top: -34.2, width: 603.38, height: 754.22 }}><Img src={s8bd87} /></div>
       </Box>
       {/* Center */}
       <Box l={658.31} t={470.93} w={603.38} h={773.59} clip className="cs-portrait-card">
-        <div className="cs-card-img" style={{ position: 'absolute', left: -7.27, top: 0, width: 617.89, height: 773.59 }}><Img src={s47efc} /></div>
+        <div className="cs-card-img" style={{ zIndex: 1, position: 'absolute', left: -7.27, top: 0, width: 617.89, height: 773.59 }}><Img src={s47efc} /></div>
       </Box>
       {/* Right */}
       <Box l={1287.93} t={470.93} w={603.35} h={509.89} clip className="cs-portrait-card">
-        <div className="cs-card-img" style={{ position: 'absolute', left: 0, top: -165.26, width: 603.35, height: 739.19 }}><Img src={sb2e79} /></div>
+        <div className="cs-card-img" style={{ zIndex: 1, position: 'absolute', left: 0, top: -165.26, width: 603.35, height: 739.19 }}><Img src={sb2e79} /></div>
       </Box>
 
       {/* ── Row 1 decorative ── */}
@@ -823,13 +823,13 @@ function Instagram() {
 
       {/* Three portrait photos */}
       <Box l={0} t={415.36} w={639.54} h={724.83} clip className="cs-portrait-card">
-        <div className="cs-card-img" style={{ position: 'absolute', left: 0, top: -206.05, width: 639.54, height: 1136.96 }}><Img src={ie3a76} /></div>
+        <div className="cs-card-img" style={{ zIndex: 1, position: 'absolute', left: 0, top: -206.05, width: 639.54, height: 1136.96 }}><Img src={ie3a76} /></div>
       </Box>
       <Box l={639.54} t={415.36} w={639.54} h={724.83} clip className="cs-portrait-card">
-        <div className="cs-card-img" style={{ position: 'absolute', left: 0, top: -206.05, width: 639.54, height: 1136.96 }}><Img src={if7dab} /></div>
+        <div className="cs-card-img" style={{ zIndex: 1, position: 'absolute', left: 0, top: -206.05, width: 639.54, height: 1136.96 }}><Img src={if7dab} /></div>
       </Box>
       <Box l={1279.09} t={415.36} w={640.91} h={724.86} clip className="cs-portrait-card">
-        <div className="cs-card-img" style={{ position: 'absolute', left: 0, top: -193.67, width: 640.91, height: 1112.21 }}><Img src={i6bb39} /></div>
+        <div className="cs-card-img" style={{ zIndex: 1, position: 'absolute', left: 0, top: -193.67, width: 640.91, height: 1112.21 }}><Img src={i6bb39} /></div>
       </Box>
 
       {/* Glitter top-right */}
@@ -938,7 +938,7 @@ function Newsletter() {
 
       {/* First name input — white background + real input */}
       <Box l={817.04} t={973.77} w={390.39} h={80.39}>
-        <div style={{ position: 'absolute', inset: 0, background: '#fff', border: '1px solid #d9d7d7', boxSizing: 'border-box' }} />
+        <div style={{ position: 'absolute', inset: 0, background: '#fff', border: '1px solid #000', boxSizing: 'border-box' }} />
         <input
           type="text"
           placeholder="First name"
@@ -949,7 +949,7 @@ function Newsletter() {
 
       {/* Email input — white background + real input */}
       <Box l={1222.15} t={973.77} w={390.39} h={80.39}>
-        <div style={{ position: 'absolute', inset: 0, background: '#fff', border: '1px solid #d9d7d7', boxSizing: 'border-box' }} />
+        <div style={{ position: 'absolute', inset: 0, background: '#fff', border: '1px solid #000', boxSizing: 'border-box' }} />
         <input
           type="email"
           placeholder="Email Address"
@@ -992,12 +992,12 @@ function Footer() {
       <Box l={553.28} t={396.16} w={768} h={44.47}><Img src={ffe12b} /></Box>
 
       {/* Navigation */}
-      <Txt l={422.22} r={479.05} t={487.67} style={{ fontFamily: 'Lora', fontWeight: 700, fontSize: 26, lineHeight: '36px', color: '#000', textAlign: 'center', letterSpacing: '6px' }}>
+      <Txt l={422.22} r={479.05} t={487.67} style={{ fontFamily: 'Lora', fontWeight: 700, fontSize: 30, lineHeight: '36px', color: '#000', textAlign: 'center', letterSpacing: '6px' }}>
         <p style={{ margin: 0 }}>Home | Fashion | Beauty | Lifestyle | Contact</p>
       </Txt>
 
       {/* Copyright */}
-      <Txt l={354.37} r={395.14} t={559.96} style={{ fontFamily: 'Lora', fontSize: 25, lineHeight: '34px', color: '#000', textAlign: 'center', letterSpacing: '3px' }}>
+      <Txt l={354.37} r={395.14} t={559.96} style={{ fontFamily: 'Lora', fontSize: 30, lineHeight: '34px', color: '#000', textAlign: 'center', letterSpacing: '3px' }}>
         <p style={{ margin: 0 }}>© 2026 CYBERSPLASH. Designed with passion for fashion lovers.</p>
       </Txt>
 
