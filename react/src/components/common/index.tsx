@@ -67,3 +67,4 @@ function NavItem({ label, l, tracking = '7.4214px' }: { label: string; l: number
 }
 
 export { Box, Txt, Img, Masked, NavItem }
+export { HeroCarousel } from './HeroCarousel'

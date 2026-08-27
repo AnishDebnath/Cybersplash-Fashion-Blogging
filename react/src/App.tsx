@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { HeroCarousel } from './components/common/HeroCarousel'
-import { Box, Txt, Img, Masked, NavItem } from './components/common'
+import { Box, Txt, Img, Masked, NavItem, HeroCarousel } from './components/common'
 
 const A = '/assets'
 
